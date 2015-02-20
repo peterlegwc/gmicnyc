@@ -2,67 +2,210 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>tmpapp</title>
+    <title>GMIC NY</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <!-- endbuild -->
   </head>
-  <body>
+  <body id="top">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">tmpapp</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gwcny-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img alt="GWC NY Logo" src="images/gmicny_logo.png">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="gwcny-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Venue</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#" class="btn-register"><span>Register</span></a></li>
+          </ul>
         </div>
       </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    </nav>
+    <section class="jumbotron">
+      <div class="container">
+        <h1>Event Headline</h1>
+        <p class="lead">Another tagline</p>
+        <p><button class="btn btn-primary btn-lg">Primary!</button></p>
       </div>
+    </section>
+    <section id="marketing" class="blurb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Some Header</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in sapien ornare, commodo ipsum vel, feugiat turpis. Cras rhoncus lorem in nisi pretium, finibus faucibus neque pulvinar. Morbi tempor est quis ex dignissim pharetra. Phasellus eleifend pretium velit, consequat lacinia mauris tristique at. Praesent turpis ante, sollicitudin ut tempor ornare, suscipit sed neque. Nunc non rhoncus nulla, et suscipit arcu. Nullam arcu mauris, blandit vestibulum nibh id, tempus iaculis nulla. Aenean quis venenatis nunc. Donec consectetur lacinia tellus non molestie. Etiam a erat sit amet ipsum faucibus bibendum. Fusce tortor ante, fringilla et finibus sit amet, gravida sit amet felis. Praesent congue sagittis sem, id tempor dolor sodales sed. Sed in massa vulputate, sollicitudin ex ut, porttitor augue. Aliquam tincidunt iaculis lacus eget commodo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="speakers" class="speakers">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">Speakers</h2>
+          <ul class="list-unstyled">
+            <li class="col-xs-6 col-sm-2-4">
+              <a href="#">
+                <div class="box">
+                  <img src="images/speakers/bo-daly.jpg" alt="Bo Daly" class="img-responsive img-rounded">
+                  <div class="caption">
+                    <h5>Bo Daly</h5>
+                    <div class="details">CEO &amp; Co-Founder, Super Evil Megacorp</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2-4">
+              <a href="#">
+                <div class="box">
+                  <img src="images/speakers/dave-morin.jpg" alt="Dave Morin" class="img-responsive img-rounded">
+                  <div class="caption">
+                    <h5>Dave Morin</h5>
+                    <div class="details">CEO &amp; Co-Founder, Path</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2-4">
+              <a href="#">
+                <div class="box">
+                  <img src="images/speakers/tim-draper.jpg" alt="Tim Draper" class="img-responsive img-rounded">
+                  <div class="caption">
+                    <h5>Tim Draper</h5>
+                    <div class="details">Founding Partner, Draper Associates and DFJ</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2-4">
+              <a href="#">
+                <div class="box">
+                  <img src="images/speakers/yves-behar.jpg" alt="Yves Behar" class="img-responsive img-rounded">
+                  <div class="caption">
+                    <h5>Yves Behar</h5>
+                    <div class="details">Co-Founder &amp; CCO, August</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-xs-6 col-sm-2-4">
+              <a href="#">
+                <div class="box">
+                  <img src="images/speakers/pavel-durov.jpg" alt="Pavel Durov" class="img-responsive img-rounded">
+                  <div class="caption">
+                    <h5>Pavel Durov</h5>
+                    <div class="details">Founder &amp; CEO, Telegram</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="stats" class="stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <div class="icon glyphicon glyphicon-user" aria-hidden="true"></div>
+            <h3>Users</h3>
+            <p class="text-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in enim sit amet elit vehicula tincidunt non quis risus. Duis in turpis eu tellus interdum venenatis id at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="icon glyphicon glyphicon-briefcase" aria-hidden="true"></div>
+            <h3>Companies</h3>
+            <p class="text-thin">Proin rutrum ex libero, a tempor nisi varius quis. Sed nisi justo, auctor vel elit sed, efficitur suscipit nunc. Curabitur eleifend ligula sed odio consectetur vehicula quis in neque. Cras odio sem, fermentum eu condimentum nec, interdum dignissim velit.</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="icon glyphicon glyphicon-globe" aria-hidden="true"></div>
+            <h3>Countries</h3>
+            <p class="text-thin">Mauris sit amet elit dignissim, luctus justo in, blandit eros. Proin egestas tortor non urna blandit viverra. Cras rhoncus sapien vel magna accumsan, eu elementum nunc placerat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="location" class="location">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="map"></div>
+          <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+          <script>
+            var map = L.map('map', {
+              scrollWheelZoom: false,
+            }).setView([40.759, -73.969], 16);
 
+            L.tileLayer('https://{s}.tiles.mapbox.com/v4/peterlegwc.l80heo1e/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGV0ZXJsZWd3YyIsImEiOiIxZjJCajJBIn0.BaUQLHLoFat12596nD3PLA', {
+              maxZoom: 18,
+            }).addTo(map);
+
+            L.marker([40.775963, -73.962643]).addTo(map).bindPopup("<strong>GWC NY Event</strong><br>Street name and stuff").openPopup();
+          </script>
+        </div>
+      </div>
+    </section>
+    <section id="sponsors" class="sponsors">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">Sponsors</h2>
+          <h4 class="text-center text-thin"><span>Platinum</span></h4>
+          <ul class="list-unstyled">
+            <li class="col-xs-6 col-sm-2-4"><div class="sponsor"><img src="images/sponsors/sponsor-baidusa.png" alt="Baidu" class="img-responsive"></div></li>
+            <li class="col-xs-6 col-sm-2-4"><div class="sponsor"><img src="images/sponsors/sponsor-cheetah.png" alt="Cheetah Mobile" class="img-responsive"></div></li>
+            <li class="col-xs-6 col-sm-2-4"><div class="sponsor"><img src="images/sponsors/sponsor-maxthon.png" alt="Maxthon" class="img-responsive"></div></li>
+            <li class="col-xs-6 col-sm-2-4"><div class="sponsor"><img src="images/sponsors/sponsor-softlayer.png" alt="Softlayer" class="img-responsive"></div></li>
+            <li class="col-xs-6 col-sm-2-4"><div class="sponsor"><img src="images/sponsors/sponsor-telerik.png" alt="Telerik" class="img-responsive"></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <p>&copy; 2015 GWC. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="top-arrow">
+      <a href="#top" class="btn btn-default" role="button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
     </div>
-
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -1,88 +1,225 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+$primary: #e21616;
+$secondary: #f46036;
+$spacegrey: #6B717E;
+$lightgrey: #E6E8E6;
+
+.transition-slow {
+  transition: all 0.5s ease-in-out;
+}
+.transition-medium {
+  transition: all 0.25s ease-in-out;
+}
+.transition-fast {
+  transition: all 0.2s ease-in-out;
 }
 
-/* Space out content a bit */
+.col-lg-2-4 {
+  @include make-lg-column(2.4)
+}
+.col-md-2-4 {
+  @include make-md-column(2.4)
+}
+.col-sm-2-4 {
+  @include make-sm-column(2.4);
+}
+
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+footer {
+  border-top: 1px solid $lightgrey;
+  .footer {
+    padding-top: 20px;
+    color: #777;
   }
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.navbar-brand {
+  padding: 15px;
 }
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  padding-top: 48px + $navbar-height;
+  background: url('../images/jumbo_manhattan.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-background-size: cover;
+  margin-bottom: 0px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  h2 {
+    color: $secondary;
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
+section.blurb {
+}
+
+section.speakers {
+  background-color: $lightgrey;
+
+  .box {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 7px 5px -5px $secondary;
+    border-radius: 6px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      background-color: transparent;
+      border-radius: 6px;
+      @extend .transition-fast;
+    }
+    &:hover::after {
+      background-color: rgba(0,0,0,0.5);
+    }
+    img {
+      position: relative;
+      @extend .transition-fast;
+    }
+    &:hover img {
+      transform: scale3d(1.2, 1.2, 1);
+    }
+    &:hover .caption .details {
+      padding: 0 5px 5px;
+      max-height: 500px;
+      opacity: 1;
+      @extend .transition-fast;
+    }
+    .caption {
+      font-weight: 200;
+      z-index: 200;
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0 0 6px 6px;
+      h5 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .details {
+        padding: 0px;
+        font-size: 12px;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        @extend .transition-fast;
+      }
+    }
   }
+}
+
+section.stats {
+  background-color: $spacegrey;
+  background: url('../images/section_timesquare.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .icon {
+    font-size: 3rem;
+    position: relative;
+    top: 10px
+  }
+  p {
+
+  }
+}
+
+section.location {
+  background-color: $secondary;
+  #map {
+    height: 70vh;
+  }
+}
+
+section.sponsors {
+  h4 {
+    margin-top: 2em;
+    color: $spacegrey;
+    text-transform: uppercase;
+  }
+  .sponsor {
+    padding: 10px;
+    box-shadow: -1px -1px 0px 0px darken($lightgrey,5%) inset, 1px 1px 0px 0px lighten($lightgrey,5%) inset;
+    @extend .transition-medium;
+    &:hover {
+      box-shadow: -2px -2px 0px 1px darken($lightgrey,10%) inset, 1px 1px 0px 0px darken($lightgrey,5%) inset;
+    }
+  }
+}
+
+.top-arrow {
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  @extend .transition-fast;
+  a.btn {
+    background-color: rgba(255,255,255,0.8);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      background-color: rgba(255,255,255,1);
+    }
+  }
+}
+
+.text-thin {
+  font-weight: 200;
+  letter-spacing: 2px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  .navbar-default {
+    background-color: rgba(255,255,255,0.5);
+    @extend .transition-fast;
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .navbar-nav {
+      > li > a {
+        box-shadow: 0px inset;
+        @extend .transition-medium;
+      }
+      > li:hover > a {
+        box-shadow: 0px 5px 0px 0px $spacegrey inset;
+      }
+      > li.active > a {
+        box-shadow: 0px 5px 0px 0px $secondary inset;
+        background-color: transparent;
+        &:hover {
+          box-shadow: 0px 5px 0px 0px $secondary inset;
+          background-color: transparent;
+        }
+      }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+      > li > a.btn-register {
+        font-weight: bold;
+
+        > span {
+          color: $brand-primary;
+
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
