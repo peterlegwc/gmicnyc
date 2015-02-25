@@ -7,11 +7,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+// color scheme
 $primary: #e21616;
 $secondary: #f46036;
 $spacegrey: #6B717E;
 $lightgrey: #E6E8E6;
 
+// custom transition effects
 .transition-slow {
   transition: all 0.5s ease-in-out;
 }
@@ -22,6 +24,7 @@ $lightgrey: #E6E8E6;
   transition: all 0.2s ease-in-out;
 }
 
+// custom bootstrap 5 column grid
 .col-lg-2-4 {
   @include make-lg-column(2.4)
 }
@@ -31,6 +34,7 @@ $lightgrey: #E6E8E6;
 .col-sm-2-4 {
   @include make-sm-column(2.4);
 }
+
 
 body {
   padding-bottom: 20px;
@@ -42,8 +46,21 @@ footer {
     color: #777;
   }
 }
-.navbar-brand {
-  padding: 15px;
+.navbar-default {
+  .navbar-nav > li > a.btn-register {
+    font-weight: bold;
+
+    > span {
+      color: $brand-primary;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+  .navbar-brand {
+    padding: 15px;
+  }
 }
 .jumbotron {
   padding-top: 48px + $navbar-height;
@@ -191,6 +208,7 @@ section.sponsors {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+  // desktop nav bar styles
   .navbar-default {
     background-color: rgba(255,255,255,0.5);
     @extend .transition-fast;
@@ -209,18 +227,6 @@ section.sponsors {
         &:hover {
           box-shadow: 0px 5px 0px 0px $secondary inset;
           background-color: transparent;
-        }
-      }
-
-      > li > a.btn-register {
-        font-weight: bold;
-
-        > span {
-          color: $brand-primary;
-
-          &:hover {
-            color: $link-hover-color;
-          }
         }
       }
     }
