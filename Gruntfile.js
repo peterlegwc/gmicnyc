@@ -75,7 +75,7 @@ module.exports = function (grunt) {
         open: true,
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
-        hostname: '0.0.0.0'
+        hostname: 'localhost'
       },
       livereload: {
         options: {
@@ -334,6 +334,12 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= config.dist %>'
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/fontawesome/fonts/*',
           dest: '<%= config.dist %>'
         }]
       },

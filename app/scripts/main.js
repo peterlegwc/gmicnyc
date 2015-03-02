@@ -20,6 +20,9 @@ $(document).ready(function() {
       }
     });
   }
+  else {
+    $('.social-media').removeClass('pull-right').addClass('pull-left');
+  }
 
   $('a[href^="#"][href!="#"]').click(function(e) {
     e.preventDefault();

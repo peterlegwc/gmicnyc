@@ -2,6 +2,7 @@
   "name": "gmicny",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "latest"
+    "bootstrap-sass-official": "latest",
+    "fontawesome": "latest"
   }
 }

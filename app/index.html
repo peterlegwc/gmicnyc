@@ -9,6 +9,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -49,13 +50,13 @@
       <div class="container">
         <h1>Event Headline</h1>
         <p class="lead">Another tagline</p>
-        <p><button class="btn btn-primary btn-lg">Primary!</button></p>
+        <p><button class="btn btn-primary btn-lg">Primary Color Button</button></p>
       </div>
     </section>
     <section id="marketing" class="blurb">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <h4>Some Header</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in sapien ornare, commodo ipsum vel, feugiat turpis. Cras rhoncus lorem in nisi pretium, finibus faucibus neque pulvinar. Morbi tempor est quis ex dignissim pharetra. Phasellus eleifend pretium velit, consequat lacinia mauris tristique at. Praesent turpis ante, sollicitudin ut tempor ornare, suscipit sed neque. Nunc non rhoncus nulla, et suscipit arcu. Nullam arcu mauris, blandit vestibulum nibh id, tempus iaculis nulla. Aenean quis venenatis nunc. Donec consectetur lacinia tellus non molestie. Etiam a erat sit amet ipsum faucibus bibendum. Fusce tortor ante, fringilla et finibus sit amet, gravida sit amet felis. Praesent congue sagittis sem, id tempor dolor sodales sed. Sed in massa vulputate, sollicitudin ex ut, porttitor augue. Aliquam tincidunt iaculis lacus eget commodo.</p>
           </div>
@@ -130,17 +131,17 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-4 text-center">
-            <div class="icon glyphicon glyphicon-user" aria-hidden="true"></div>
+            <i class="icon fa fa-users" aria-hidden="true"></i>
             <h3>Users</h3>
             <p class="text-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in enim sit amet elit vehicula tincidunt non quis risus. Duis in turpis eu tellus interdum venenatis id at felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
           </div>
           <div class="col-sm-4 text-center">
-            <div class="icon glyphicon glyphicon-briefcase" aria-hidden="true"></div>
+            <i class="icon fa fa-briefcase" aria-hidden="true"></i>
             <h3>Companies</h3>
             <p class="text-thin">Proin rutrum ex libero, a tempor nisi varius quis. Sed nisi justo, auctor vel elit sed, efficitur suscipit nunc. Curabitur eleifend ligula sed odio consectetur vehicula quis in neque. Cras odio sem, fermentum eu condimentum nec, interdum dignissim velit.</p>
           </div>
           <div class="col-sm-4 text-center">
-            <div class="icon glyphicon glyphicon-globe" aria-hidden="true"></div>
+            <i class="icon fa fa-globe" aria-hidden="true"></i>
             <h3>Countries</h3>
             <p class="text-thin">Mauris sit amet elit dignissim, luctus justo in, blandit eros. Proin egestas tortor non urna blandit viverra. Cras rhoncus sapien vel magna accumsan, eu elementum nunc placerat.</p>
           </div>
@@ -156,12 +157,11 @@
             var map = L.map('map', {
               scrollWheelZoom: false,
             }).setView([40.759, -73.969], 16);
-
             L.tileLayer('https://{s}.tiles.mapbox.com/v4/peterlegwc.l80heo1e/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGV0ZXJsZWd3YyIsImEiOiIxZjJCajJBIn0.BaUQLHLoFat12596nD3PLA', {
               maxZoom: 18,
             }).addTo(map);
 
-            L.marker([40.775963, -73.962643]).addTo(map).bindPopup("<strong>GWC NY Event</strong><br>Street name and stuff").openPopup();
+            L.marker([40.775963, -73.962643]).addTo(map).bindPopup("<strong>GMIC New York</strong><br>Street name and stuff").openPopup();
           </script>
         </div>
       </div>
@@ -181,15 +181,29 @@
         </div>
       </div>
     </section>
+    <section id="gmics" class="gmics">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">GMIC Locations</h2>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="container">
         <div class="footer">
-          <p>&copy; 2015 GWC. All Rights Reserved.</p>
+          <div class="pull-left">(408) 463-6956 &middot; 201 San Antonio Circle, Suite 235 &middot; Mountain View, CA 94040<br>&copy; 2015 GWC, Inc. All Rights Reserved
+</div>
+          <div class="social-media pull-right">
+            <ul class="list-inline">
+              <li><a class="sm-fb" href="https://www.facebook.com/thegmic"><i class="fa fa-facebook"></i></a></li><li><a class="sm-tw" href="https://twitter.com/theGMIC"><i class="fa fa-twitter"></i></a></li><li><a class="sm-in" href="http://www.linkedin.com/groups?gid=2825839&trk=hb_side_g"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
     <div class="top-arrow">
-      <a href="#top" class="btn btn-default" role="button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>
+      <a href="#top" class="btn btn-default" role="button"><i class="fa fa-chevron-up"></i>
+</a>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
