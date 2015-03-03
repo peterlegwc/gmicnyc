@@ -9,6 +9,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // color scheme
 $secondary: #dc5b38;
+$tertiary: #38ddae;
 $spacegrey: #6B717E;
 $lightgrey: #E6E8E6;
 
@@ -58,7 +59,7 @@ section.speakers {
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 0px 7px 5px -5px $secondary;
+    box-shadow: 0px 7px 5px -5px $tertiary;
     border-radius: 6px;
     &::after {
       content: "";
@@ -133,7 +134,7 @@ section.stats {
 }
 
 section.location {
-  background-color: $secondary;
+  background-color: $tertiary;
   #map {
     height: 70vh;
   }
@@ -206,10 +207,13 @@ footer {
 .jumbotron {
   padding-top: 48px + $navbar-height;
   background: url('../images/jumbo_manhattan.jpg');
-  background-position: center top;
+  background-position: center 10%;
   background-repeat: no-repeat;
   background-background-size: cover;
   margin-bottom: 0px;
+  h2 {
+    color: #38ddae;
+  }
 }
 
 .social-media {
