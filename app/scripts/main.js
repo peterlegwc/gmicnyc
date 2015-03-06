@@ -6,6 +6,7 @@ $(document).ready(function() {
     var topThreshold = $(window).height() / 2;
     $(window).scroll(function () {
       var y = $(window).scrollTop();
+
       if (y > navOffset) {
         $('.navbar').css('background-color','rgba(255,255,255,0.95)');
       }

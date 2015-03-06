@@ -9,10 +9,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // color scheme
 $secondary: #dc5b38;
-$tertiary: #38ddae;
+$accent: #38ddae;
 $spacegrey: #6B717E;
 $lightgrey: #E6E8E6;
 
+/* bootstrap customization */
 // custom transition effects
 .transition-slow {
   transition: all 0.5s ease-in-out;
@@ -41,11 +42,33 @@ $lightgrey: #E6E8E6;
   box-shadow: 0px $height 0px 0px $color inset;
 }
 
+// outlined button
+.btn.outline {
+    background: none;
+    padding: 8px 16px;
+}
+.btn-primary.outline {
+    border: 2px solid $brand-primary;
+    color: $brand-primary;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: darken($brand-primary,15%);
+    border-color: darken($brand-primary,15%);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: darken($brand-primary,15%);
+    color: darken($brand-primary,15%);
+    box-shadow: none;
+}
+
+/* site styles */
 section, footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  h2 {
-    color: $secondary;
+  .heading {
+    color: darken($accent, 15%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 }
 
@@ -59,7 +82,7 @@ section.speakers {
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 0px 7px 5px -5px $tertiary;
+    box-shadow: 0px 7px 5px -5px $accent;
     border-radius: 6px;
     &::after {
       content: "";
@@ -128,13 +151,10 @@ section.stats {
     position: relative;
     top: 10px
   }
-  p {
-
-  }
 }
 
 section.location {
-  background-color: $tertiary;
+  background-color: $accent;
   #map {
     height: 70vh;
   }
@@ -183,11 +203,6 @@ footer {
   }
 }
 
-.text-thin {
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
 .navbar-default {
   .navbar-nav > li > a.btn-register {
     font-weight: bold;
@@ -202,18 +217,20 @@ footer {
   }
   .navbar-brand {
     padding: 20px;
+    img {
+      @extend .transition-medium;
+      opacity: 1;
+    }
   }
 }
+
 .jumbotron {
   padding-top: 48px + $navbar-height;
   background: url('../images/jumbo_manhattan.jpg');
-  background-position: center 10%;
+  background-position: left 10%;
   background-repeat: no-repeat;
   background-background-size: cover;
   margin-bottom: 0px;
-  h2 {
-    color: #38ddae;
-  }
 }
 
 .social-media {
@@ -226,30 +243,47 @@ footer {
         font-size: 2rem;
         padding: 1rem;
         @extend .transition-medium;
-        &:hover {
-          color: #fff;
-        }
         &.sm-fb {
           @include top-shadow(5px,#3b5998);
+          color: #3b5998;
           &:hover {
             @include top-shadow(4em,#3b5998);
+            color: #fff;
           }
         }
         &.sm-tw {
           @include top-shadow(5px,#4099ff);
+          color: #4099ff;
           &:hover {
             @include top-shadow(4em,#4099ff);
+            color: #fff;
           }
         }
         &.sm-in {
           @include top-shadow(5px,#007bb6);
+          color: #007bb6;
           &:hover {
             @include top-shadow(4em,#007bb6);
+            color: #fff;
           }
         }
       }
     }
   }
+}
+
+/* utility */
+.text-thin {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.accent {
+  color: $accent;
+}
+
+.vspace {
+  margin: 1em 0;
 }
 
 /* Responsive: small width screens */
@@ -274,10 +308,10 @@ footer {
         @include top-shadow(5px,$spacegrey);
       }
       > li.active > a {
-        @include top-shadow(5px,$secondary);
+        @include top-shadow(5px,$accent);
         background-color: transparent;
         &:hover {
-          @include top-shadow(5px,$secondary);
+          @include top-shadow(5px,$accent);
           background-color: transparent;
         }
       }
