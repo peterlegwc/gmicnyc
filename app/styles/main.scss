@@ -8,8 +8,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 // color scheme
-$secondary: #dc5b38;
-$accent: #38ddae;
+// $brand-primary: #9c27b0;
+$accent: #1de9b6;
 $spacegrey: #6B717E;
 $lightgrey: #E6E8E6;
 
@@ -42,7 +42,13 @@ $lightgrey: #E6E8E6;
   box-shadow: 0px $height 0px 0px $color inset;
 }
 
-// outlined button
+/* bootstrap buttons */
+.btn {
+  @extend .transition-medium;
+}
+.btn-accent {
+  @include button-variant($text-color, $accent, darken($accent,5%));
+}
 .btn.outline {
     background: none;
     padding: 8px 16px;
@@ -61,21 +67,136 @@ $lightgrey: #E6E8E6;
     box-shadow: none;
 }
 
-/* site styles */
+/* universal */
+body {
+  padding-top: $navbar-height;
+}
+
 section, footer {
   padding-top: 20px;
   padding-bottom: 20px;
   .heading {
-    color: darken($accent, 15%);
+    color: $brand-primary;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    &.accent {
+      color: darken($accent,20%);
+    }
   }
 }
 
-section.blurb {
+footer {
+  border-top: 1px solid $lightgrey;
+  .footer {
+    font-size: 12px;
+    color: #777;
+  }
+  .social-media {
+    float: right;
+    @media screen and (max-width: 767px) {
+      float: left;
+    }
+    ul {
+      margin-top: 10px;
+      margin-bottom: 0;
+      li {
+        padding: 0;
+        a {
+          font-size: 2rem;
+          padding: 1rem;
+          @extend .transition-medium;
+          &.sm-fb {
+            @include top-shadow(5px,#3b5998);
+            color: #3b5998;
+            &:hover {
+              @include top-shadow(4em,#3b5998);
+              color: #fff;
+            }
+          }
+          &.sm-tw {
+            @include top-shadow(5px,#4099ff);
+            color: #4099ff;
+            &:hover {
+              @include top-shadow(4em,#4099ff);
+              color: #fff;
+            }
+          }
+          &.sm-in {
+            @include top-shadow(5px,#007bb6);
+            color: #007bb6;
+            &:hover {
+              @include top-shadow(4em,#007bb6);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-section.speakers {
+.top-arrow {
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  @extend .transition-fast;
+  @media screen and (max-width: 767px) {
+    opacity: 1;
+  }
+  a.btn {
+    background-color: rgba(255,255,255,0.8);
+    @extend .transition-medium;
+    &:hover {
+      background-color: rgba(255,255,255,1);
+    }
+  }
+}
+
+.navbar-default {
+  .navbar-nav > li > a.btn-register {
+    font-weight: bold;
+
+    > span {
+      color: $brand-primary;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+  .navbar-brand {
+    padding: 20px;
+    img {
+      @extend .transition-medium;
+      opacity: 1;
+    }
+  }
+}
+
+/* pages */
+.jumbotron {
+  background-image: url('../images/jumbo_manhattan.jpg');
+  background-position: left 25%;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  margin-bottom: 0px;
+  min-height: 300px;
+}
+
+.venue {
+  background-color: $spacegrey;
+  color: #fff;
+  border-bottom: 1px solid $accent;
+}
+
+.blurb {
+  background-image: url('../images/bg_blocks.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.speakers {
   background-color: $lightgrey;
 
   .box {
@@ -138,7 +259,7 @@ section.speakers {
   }
 }
 
-section.stats {
+.stats {
   background-color: $spacegrey;
   background: url('../images/section_timesquare.jpg');
   background-position: center center;
@@ -153,14 +274,14 @@ section.stats {
   }
 }
 
-section.location {
+.location {
   background-color: $accent;
   #map {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
-section.sponsors {
+.sponsors {
   h4 {
     margin-top: 2em;
     color: $spacegrey;
@@ -176,127 +297,68 @@ section.sponsors {
   }
 }
 
-section.gmics {
-
-}
-
-footer {
-  border-top: 1px solid $lightgrey;
-  .footer {
-    font-size: 12px;
-    color: #777;
-  }
-}
-
-.top-arrow {
-  opacity: 0;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  @extend .transition-fast;
-  a.btn {
-    background-color: rgba(255,255,255,0.8);
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      background-color: rgba(255,255,255,1);
-    }
-  }
-}
-
-.navbar-default {
-  .navbar-nav > li > a.btn-register {
-    font-weight: bold;
-
-    > span {
-      color: $brand-primary;
-
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
-  }
-  .navbar-brand {
-    padding: 20px;
-    img {
-      @extend .transition-medium;
-      opacity: 1;
-    }
-  }
-}
-
-.jumbotron {
-  padding-top: 48px + $navbar-height;
-  background: url('../images/jumbo_manhattan.jpg');
-  background-position: left 10%;
-  background-repeat: no-repeat;
-  background-background-size: cover;
-  margin-bottom: 0px;
-}
-
-.social-media {
+.gmics {
   ul {
-    margin-top: 10px;
-    margin-bottom: 0;
+    // text-align: center;
     li {
-      padding: 0;
+      text-align: center;
       a {
-        font-size: 2rem;
-        padding: 1rem;
-        @extend .transition-medium;
-        &.sm-fb {
-          @include top-shadow(5px,#3b5998);
-          color: #3b5998;
-          &:hover {
-            @include top-shadow(4em,#3b5998);
-            color: #fff;
-          }
+        color: $spacegrey;
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          opacity: 0.6;
+          @extend .transition-medium;
         }
-        &.sm-tw {
-          @include top-shadow(5px,#4099ff);
-          color: #4099ff;
-          &:hover {
-            @include top-shadow(4em,#4099ff);
-            color: #fff;
-          }
-        }
-        &.sm-in {
-          @include top-shadow(5px,#007bb6);
-          color: #007bb6;
-          &:hover {
-            @include top-shadow(4em,#007bb6);
-            color: #fff;
+        &:hover {
+          color: $text-color;
+          img {
+            opacity: 1;
           }
         }
       }
     }
   }
+  h5 {
+    margin-bottom: 0;
+  }
+}
+
+/* links */
+a:hover {
+  cursor: pointer;
 }
 
 /* utility */
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .text-thin {
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .accent {
   color: $accent;
 }
 
-.vspace {
-  margin: 1em 0;
+.no-vpd {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-/* Responsive: small width screens */
-@media screen and (max-width: 767px) {
-  .top-arrow {
-    opacity: 1;
-  }
+.no-vmg {
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   // desktop nav bar styles
   .navbar-default {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.95);
     @extend .transition-fast;
 
     .navbar-nav {

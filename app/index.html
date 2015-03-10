@@ -2,19 +2,23 @@
 <html class="no-js" ng-app="gmicnycApp">
   <head>
     <meta charset="utf-8">
-    <title>GMIC New York</title>
+    <title ng-bind="'GMIC New York - ' + title"></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <!-- endbuild -->
   </head>
   <body id="top">
@@ -30,29 +34,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" href="#/">
             <img src="images/gmicny_logo.png" alt="GMIC NYC">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="gwcny-navbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="#">Speakers</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Venue</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#" class="btn-register"><span>Register</span></a></li>
+          <ul class="nav navbar-nav navbar-right" auto-active>
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/speakers">Speakers</a></li>
+            <li><a href="#/schedule">Schedule</a></li>
+            <li><a href="#/venue">Venue</a></li>
+            <li><a href="#/sponsors">Sponsors</a></li>
+            <li><a href="#/register" class="btn-register"><span>Register</span></a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div ng-view=""></div>
+    <div ng-view="" autoscroll="true"></div>
     <footer>
       <div class="container">
         <div class="footer">
           <div class="pull-left">(408) 463-6956 &middot; 201 San Antonio Circle, Suite 235 &middot; Mountain View, CA 94040<br>&copy; 2015 GWC, Inc. All Rights Reserved
 </div>
-          <div class="social-media pull-right">
+          <div class="social-media">
             <ul class="list-inline">
               <li><a class="sm-fb" href="https://www.facebook.com/thegmic"><i class="fa fa-facebook"></i></a></li><li><a class="sm-tw" href="https://twitter.com/theGMIC"><i class="fa fa-twitter"></i></a></li><li><a class="sm-in" href="http://www.linkedin.com/groups?gid=2825839&trk=hb_side_g"><i class="fa fa-linkedin"></i></a></li>
             </ul>
@@ -69,8 +73,10 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
     <!-- endbower -->
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -88,6 +94,7 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/speakers.js"></script>
+        <script src="scripts/directives/autoactive.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,19 +1,11 @@
 'use strict';
 $(document).ready(function() {
-  var navOffset = $('.navbar').height();
-
+  // toggle top arrow on desktops
   if ($(window).width() > 768) {
-    var topThreshold = $(window).height() / 2;
     $(window).scroll(function () {
       var y = $(window).scrollTop();
 
-      if (y > navOffset) {
-        $('.navbar').css('background-color','rgba(255,255,255,0.95)');
-      }
-      else {
-        $('.navbar').css('background-color','rgba(255,255,255,0.5)');
-      }
-      if (y > topThreshold) {
+      if (y > $(window).height()) {
         $('.top-arrow').css('opacity','1');
       }
       else {
@@ -21,15 +13,12 @@ $(document).ready(function() {
       }
     });
   }
-  else {
-    $('.social-media').removeClass('pull-right').addClass('pull-left');
-  }
-
-  $('a[href^="#"][href!="#"]').click(function(e) {
+  // smooth scroll to top
+  $('.top-arrow a').click(function(e) {
     e.preventDefault();
     var target = this.hash;
     $('html, body').stop().animate({
-      'scrollTop': $(target).offset().top - navOffset,
+      'scrollTop': $(target).offset().top
     }, 900, 'swing');
   });
 });

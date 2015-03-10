@@ -13,12 +13,13 @@
   "noarg": true,
   "quotmark": "single",
   "undef": true,
-  "unused": true,
+  "unused": "vars",
   "strict": true,
   "trailing": true,
   "smarttabs": true,
   "jquery": true,
   "globals": {
+    "L": true,
     "angular": false
   }
 }
