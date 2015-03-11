@@ -40,10 +40,12 @@ angular.module('gmicnycApp')
       angular.element('.navbar-brand img').css('opacity','1');
     });
 
+    // handle large logo and navbar logo
     var navOffset = angular.element('.navbar').height();
-    var homeOffset = angular.element('.blurb').offset().top - navOffset;
+    var homeOffset = angular.element('.logo-lg').offset().top + angular.element('.logo-lg').height() - navOffset;
 
     angular.element('.navbar-brand img').css('opacity','0');
+
     angular.element(window).scroll(function() {
       var y = angular.element(window).scrollTop();
       if (y > homeOffset) {
@@ -54,6 +56,7 @@ angular.module('gmicnycApp')
       }
     });
 
+    // offsets map on larger screens to show more of new york
     if (angular.element(window).width() > 768) {
       leafletData.getMap('map').then(function(map) {
         map.setView($scope.desktopCenter);

@@ -75,14 +75,6 @@ body {
 section, footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  .heading {
-    color: $brand-primary;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    &.accent {
-      color: darken($accent,20%);
-    }
-  }
 }
 
 footer {
@@ -135,6 +127,12 @@ footer {
   }
 }
 
+.bg-strip {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .top-arrow {
   opacity: 0;
   position: fixed;
@@ -182,9 +180,15 @@ footer {
   // background-size: cover;
   margin-bottom: 0px;
   min-height: 300px;
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+    background-position: left top;
+  }
 }
 
 .venue {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: $spacegrey;
   color: #fff;
   border-bottom: 1px solid $accent;
@@ -259,12 +263,7 @@ footer {
   }
 }
 
-.stats {
-  background-color: $spacegrey;
-  background: url('../images/section_timesquare.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.sponsorship {
   color: #fff;
 
   .icon {
@@ -298,24 +297,22 @@ footer {
 }
 
 .gmics {
-  ul {
-    // text-align: center;
-    li {
-      text-align: center;
-      a {
-        color: $spacegrey;
+  div {
+    text-align: center;
+    a {
+      color: $spacegrey;
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        opacity: 0.6;
+        @extend .transition-medium;
+      }
+      &:hover {
+        color: $text-color;
+        text-decoration: none;
         img {
-          display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          opacity: 0.6;
-          @extend .transition-medium;
-        }
-        &:hover {
-          color: $text-color;
-          img {
-            opacity: 1;
-          }
+          opacity: 1;
         }
       }
     }
@@ -325,12 +322,33 @@ footer {
   }
 }
 
+/* bg strips */
+.bg-strip.speakers-panel {
+  background-image: url('../images/speakers-panel.jpg');
+  min-height: 400px;
+  @media screen and (max-width: 768px) {
+    min-height: 100px;
+  }
+}
+.bg-strip.sponsorship {
+  background: url('../images/section_timesquare.jpg');
+  background-position: center center;
+}
+
 /* links */
 a:hover {
   cursor: pointer;
 }
 
 /* utility */
+.text-heading {
+  color: $brand-primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &.accent {
+    color: darken($accent,20%);
+  }
+}
 .text-uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;

@@ -25,6 +25,11 @@ angular
         templateUrl: 'views/speakers.html',
         controller: 'SpeakersCtrl'
       })
+      .when('/sponsors', {
+        title: 'Sponsorship',
+        templateUrl: 'views/sponsors.html',
+        controller: 'SponsorsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
