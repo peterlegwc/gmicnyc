@@ -2,8 +2,8 @@
   "name": "gmicnyc",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "latest",
-    "fontawesome": "latest",
+    "bootstrap-sass-official": "~3.3.3",
+    "font-awesome": "~4.3.0",
     "angular": "~1.3.14",
     "angular-route": "~1.3.14",
     "angular-leaflet-directive": "~0.7.11"

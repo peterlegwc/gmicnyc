@@ -70,6 +70,7 @@ $lightgrey: #E6E8E6;
 /* universal */
 body {
   padding-top: $navbar-height;
+  font-weight: 300;
 }
 
 section, footer {
@@ -284,7 +285,6 @@ footer {
   h4 {
     margin-top: 2em;
     color: $spacegrey;
-    text-transform: uppercase;
   }
   .sponsor {
     padding: 10px;
@@ -343,19 +343,12 @@ a:hover {
 /* utility */
 .text-heading {
   color: $brand-primary;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   &.accent {
     color: darken($accent,20%);
   }
 }
-.text-uppercase {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 .text-thin {
   font-weight: 200;
-  letter-spacing: 1px;
 }
 
 .accent {
