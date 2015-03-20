@@ -30,11 +30,16 @@ angular
         templateUrl: 'views/sponsors.html',
         controller: 'SponsorsCtrl'
       })
+      .when('/schedule', {
+        templateUrl: 'views/schedule.html',
+        controller: 'ScheduleCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  }).run(['$rootScope', function($rootScope) {
+  }).run(['$rootScope', '$location', '$window', function($rootScope, $location, $window) {
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
+      $window.ga('send', 'pageview', { page: $location.url() });
       if (current.hasOwnProperty('$$route')) {
         $rootScope.title = current.$$route.title;
       }

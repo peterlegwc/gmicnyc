@@ -12,9 +12,19 @@ describe('Directive: autoActive', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<auto-active></auto-active>');
+  it('makes the active page highlighted in the menu', inject(function ($compile, $location) {
+    element = angular.element(
+      '<ul auto-active>' +
+        '<li><a href="#/1">One</a></li>' +
+        '<li><a href="#/2">Two</a></li>' +
+      '</ul>');
+    $location.path('/1');
+
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the autoActive directive');
+    var test1 = angular.element(element.children()[0]);
+    var test2 = angular.element(element.children()[1]);
+
+    expect(test1.hasClass('active')).toBe(true);
+    expect(test2.hasClass('active')).toBe(false);
   }));
 });

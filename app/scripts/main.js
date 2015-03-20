@@ -11,6 +11,12 @@ $(document).ready(function() {
       else {
         $('.top-arrow').css('opacity','0');
       }
+      if (y + $(window).height() === $(document).height()) {
+        $('.top-arrow').css('bottom', $('footer').outerHeight() + 20);
+      }
+      else {
+        $('.top-arrow').css('bottom','20px');
+      }
     });
   }
   // smooth scroll to top

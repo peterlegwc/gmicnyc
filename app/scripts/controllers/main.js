@@ -35,27 +35,6 @@ angular.module('gmicnycApp')
         }
     });
 
-    $scope.$on('$destroy', function() {
-      angular.element(window).unbind('scroll');
-      angular.element('.navbar-brand img').css('opacity','1');
-    });
-
-    // handle large logo and navbar logo
-    var navOffset = angular.element('.navbar').height();
-    var homeOffset = angular.element('.logo-lg').offset().top + angular.element('.logo-lg').height() - navOffset;
-
-    angular.element('.navbar-brand img').css('opacity','0');
-
-    angular.element(window).scroll(function() {
-      var y = angular.element(window).scrollTop();
-      if (y > homeOffset) {
-        angular.element('.navbar-brand img').css('opacity','1');
-      }
-      else {
-        angular.element('.navbar-brand img').css('opacity','0');
-      }
-    });
-
     // offsets map on larger screens to show more of new york
     if (angular.element(window).width() > 768) {
       leafletData.getMap('map').then(function(map) {
