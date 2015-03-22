@@ -22,7 +22,7 @@ angular.module('gmicnycApp')
         },
         defaults: {
           tileLayer: 'https://{s}.tiles.mapbox.com/v4/peterlegwc.l80heo1e/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGV0ZXJsZWd3YyIsImEiOiIxZjJCajJBIn0.BaUQLHLoFat12596nD3PLA',
-          scrollWheelZoom: false
+          scrollWheelZoom: false,
         },
         markers: {
           gmicnycMarker: {
@@ -39,6 +39,18 @@ angular.module('gmicnycApp')
     if (angular.element(window).width() > 768) {
       leafletData.getMap('map').then(function(map) {
         map.setView($scope.desktopCenter);
+      });
+    }
+    else {
+      leafletData.getMap('map').then(function(map) {
+        // Disable drag and zoom handlers.
+        map.dragging.disable();
+        map.touchZoom.disable();
+
+        // Disable tap handler, if present.
+        if (map.tap) {
+          map.tap.disable();
+        }
       });
     }
   }]);

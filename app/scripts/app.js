@@ -38,6 +38,7 @@ angular
         redirectTo: '/'
       });
   }).run(['$rootScope', '$location', '$window', function($rootScope, $location, $window) {
+    $rootScope.title = 'GMIC New York';
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
       $window.ga('send', 'pageview', { page: $location.url() });
       if (current.hasOwnProperty('$$route')) {

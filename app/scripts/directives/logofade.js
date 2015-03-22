@@ -7,30 +7,35 @@
  * # logoFade
  */
 angular.module('gmicnycApp')
-  .directive('logoFade', function () {
+  .directive('logoFade', ['$window', function ($window) {
     return {
       restrict: 'A',
+      scope: {
+        page: '='
+      },
       link: function (scope, element) {
-        scope.$on('$destroy', function() {
-          angular.element(window).unbind('scroll', logoHandler);
-          angular.element('.navbar-brand img').css('opacity','1');
-        });
 
         // handle large logo and navbar logo
-        function logoHandler(scope, element) {
-          var y = angular.element(window).scrollTop();
-          if (y > homeOffset) {
-            angular.element('.navbar-brand img').css('opacity','1');
+        function logoHandler() {
+          /* jshint validthis:true */
+          if (this.pageYOffset >= 100) {
+            element.removeClass('translucent');
           }
           else {
-            angular.element('.navbar-brand img').css('opacity','0');
+            element.addClass('translucent');
           }
+          scope.$apply();
         }
-        var navOffset = angular.element('.navbar').height();
-        var homeOffset = element.offset().top + element.height() - navOffset;
-
-        angular.element('.navbar-brand img').css('opacity','0');
-        angular.element(window).scroll(logoHandler);
+        scope.$watch('page', function(page){
+          if(page === 'Home'){
+            element.addClass('translucent');
+            angular.element($window).bind('scroll',logoHandler);
+          }
+          else {
+            element.removeClass('translucent');
+            angular.element($window).unbind('scroll', logoHandler);
+          }
+        });
       }
     };
-  });
+  }]);
