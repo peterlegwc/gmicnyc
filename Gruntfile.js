@@ -244,6 +244,24 @@ module.exports = function (grunt) {
       }
     },
 
+    // Deploys to SFTP server
+    'sftp-deploy': {
+      build: {
+        auth: {
+          host: '54.249.235.17',
+          port: 40022,
+          authKey: 'gmic'
+        },
+        cache: 'sftpCache.json',
+        src: '<%= config.dist %>/',
+        dest: 'nyc.thegmic.com/',
+        exclusions: ['<%= config.dist %>/**/.DS_Store', '<%= config.dist %>/**/Thumbs.db', '<%= config.dist %>/tmp'],
+        serverSep: '/',
+        concurrency: 4,
+        progress: true
+      }
+    },
+
     // Reads HTML for usemin blocks to enable smart builds that automatically
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
@@ -478,5 +496,9 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'sftp-deploy'
   ]);
 };
