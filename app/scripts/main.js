@@ -27,4 +27,9 @@ $(document).ready(function() {
       'scrollTop': $(target).offset().top
     }, 900, 'swing');
   });
+
+  // handle mobile menu clicks to deal with Angular
+  $('body').on('click', '#gmicnyc-navbar.navbar-collapse.collapse.in a', function() {
+    $('#gmicnyc-navbar').collapse('toggle');
+  });
 });

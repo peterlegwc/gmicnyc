@@ -26,7 +26,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gwcny-navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gmicnyc-navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -36,12 +36,10 @@
             <img src="images/gmicny_logo.png" alt="GMIC NYC" logo-fade page="title">
           </a>
         </div>
-        <div class="collapse navbar-collapse" id="gwcny-navbar">
+        <div class="collapse navbar-collapse" id="gmicnyc-navbar">
           <ul class="nav navbar-nav navbar-right" auto-active>
-            <li><a href="#/">Home</a></li>
-            <li><a href="#/speakers">Speaking</a></li>
-            <!-- <li><a href="#/schedule">Schedule</a></li>
-            <li><a href="#/venue">Venue</a></li>
+            <li><a href="#/">Home</a></li><li><a href="#/speakers">Speaking</a></li><li><a href="#/topics">Topics</a></li>
+            <!-- <li><a href="#/venue">Venue</a></li>
             <li><a href="#/sponsors">Sponsorship</a></li>
             <li><a href="#/register" class="btn-register"><span>Register</span></a></li> -->
           </ul>
@@ -52,8 +50,7 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="pull-left">(408) 463-6956 &middot; 201 San Antonio Circle, Suite 235 &middot; Mountain View, CA 94040<br>&copy; 2015 GWC, Inc. All Rights Reserved
-</div>
+          <div class="pull-left">(408) 463-6956 &middot; 201 San Antonio Circle, Suite 235 &middot; Mountain View, CA 94040<br>&copy; 2015 GWC, Inc. All Rights Reserved</div>
           <div class="social-media">
             <ul class="list-inline">
               <li><a class="sm-fb" href="https://www.facebook.com/thegmic"><i class="fa fa-facebook"></i></a></li><li><a class="sm-tw" href="https://twitter.com/theGMIC"><i class="fa fa-twitter"></i></a></li><li><a class="sm-in" href="http://www.linkedin.com/groups?gid=2825839&trk=hb_side_g"><i class="fa fa-linkedin"></i></a></li>
@@ -62,6 +59,7 @@
         </div>
       </div>
     </footer>
+    <route-loading></route-loading>
     <div class="top-arrow">
       <a href="#top" class="btn btn-default" role="button"><i class="fa fa-chevron-up"></i></a>
     </div>
@@ -71,6 +69,7 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
     <!-- endbower -->
@@ -93,10 +92,12 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/speakers.js"></script>
-        <script src="scripts/directives/autoactive.js"></script>
         <script src="scripts/controllers/sponsors.js"></script>
+        <script src="scripts/controllers/topics.js"></script>
         <script src="scripts/controllers/schedule.js"></script>
+        <script src="scripts/directives/autoactive.js"></script>
         <script src="scripts/directives/logofade.js"></script>
+        <script src="scripts/directives/routeloading.js"></script>
         <!-- endbuild -->
 </body>
 </html>

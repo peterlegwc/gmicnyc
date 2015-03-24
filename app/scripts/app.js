@@ -11,7 +11,8 @@
 angular
   .module('gmicnycApp', [
     'ngRoute',
-    'leaflet-directive'
+    'leaflet-directive',
+    'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,7 +31,13 @@ angular
         templateUrl: 'views/sponsors.html',
         controller: 'SponsorsCtrl'
       })
+      .when('/topics', {
+        title: 'Topics',
+        templateUrl: 'views/topics.html',
+        controller: 'TopicsCtrl'
+      })
       .when('/schedule', {
+        title: 'Schedule',
         templateUrl: 'views/schedule.html',
         controller: 'ScheduleCtrl'
       })

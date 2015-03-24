@@ -1,4 +1,4 @@
-<section class="jumbotron">
+<section class="bg-strip jumbotron">
   <div class="container">
     <img class="img-responsive logo-lg" src="images/gmicny_logo_large.png" alt="GMIC NYC">
   </div>
@@ -12,17 +12,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h3 class="text-heading">Mobile: All About the Customer Experience</h3>
+        <h3 class="color-primary">Mobile: All About the Customer Experience</h3>
         <p>The world’s most influential conference on mobile comes to New York City on June 11th. From Beijing to San Francisco and Tokyo to Bangalore, GMIC has been the place for tech leaders to collaborate and educate global participants.</p>
         <p>A mobile world changes retail, payments, marketing and social infrastructures. At the center of the mobile experience sits the customer. Brands using mobile platforms and technologies to engage their base have discovered unique challenges and opportunities. Capitalizing on mobile through customer engagement is a key to success.</p>
         <p>At GMIC NYC, realign your mobile strategy to leapfrog the competition. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on optimizing the mobile customer experience.</p>
         <!-- <p><a class="btn btn-primary" role="button">Register Now</a></p> -->
       </div>
       <div class="col-md-4 call-speakers">
-        <h3 class="text-heading accent text-center">Call for Speakers</h3>
+        <h3 class="color-primary color-accent text-center">Call for Speakers</h3>
         <p>Interested to join the conversation at GMIC New York as a speaker? We welcome proposals from industry leaders with big ideas in mobile. Submit a proposal to speak here.</p>
         <p class="text-center"><a href="#/speakers" class="btn btn-accent btn-lg" role="button">Apply to Speak</a></p>
-        <p class="text-center"><small>Interested in Sponsoring? Please contact <a href="mailto:sean.raman@gwc.net">Sean Raman</a></small></p>
+        <h3 class="color-primary color-primary text-center">Interested in Sponsoring?</h3>
+        <p class="text-center"><a href="mailto:sean.raman@gwc.net" class="btn btn-primary btn-lg" role="button">Contact Us</a></p>
       </div>
     </div>
   </div>
@@ -37,15 +38,15 @@
 <section id="gmics" class="gmics">
   <div class="container">
     <div class="row">
-      <h3 class="text-heading text-center">GMIC Locations</h3>
-      <div class="col-sm-3"><a href="//beijing.thegmic.com"><img src="images/gmics/gmic-beijing.png" alt="GMIC Beijing"><h5>Beijing</h5><span class="text-thin">April 28-30, 2015</span></a></div>
-      <div class="col-sm-3"><a><img src="images/gmics/gmic-nyc.png" alt="GMIC New York"><h5>New York</h5><span class="text-thin">June 11, 2015</span></a></div>
-      <div class="col-sm-3"><a href="//tokyo.thegmic.com"><img src="images/gmics/gmic-tokyo.png" alt="GMIC Tokyo"><h5>Tokyo</h5><span class="text-thin">July 10, 2015</span></a></div>
-      <div class="col-sm-3"><a><img src="images/gmics/gmic-jakarta.png" alt="GMIC Jakarta"><h5>Jakarta</h5><span class="text-thin">August 11, 2015</span></a></div>
-      <div class="col-sm-3"><a href="//bangalore.thegmic.com"><img src="images/gmics/gmic-bangalore.png" alt="GMIC Bangalore"><h5>Bangalore</h5><span class="text-thin">September 16-17, 2015</span></a></div>
-      <div class="col-sm-3"><a href="//sv.thegmic.com"><img src="images/gmics/gmic-sv.png" alt="GMIC Silicon Valley"><h5>Silicon Valley</h5><span class="text-thin">September 28-30, 2015</span></a></div>
-      <div class="col-sm-3"><a><img src="images/gmics/gmic-saopaulo.png" alt="GMIC Sao Paulo"><h5>São Paulo</h5></a><span class="text-thin">November, 2015</span></div>
-      <div class="col-sm-3"><a><img src="images/gmics/gmic-taipei.png" alt="GMIC Taipei"><h5>Taipei</h5><span class="text-thin">December, 2015</span></a></div>
+      <h3 class="color-primary text-center">GMIC Locations</h3>
+      <div class="col-sm-3" ng-repeat="event in gmics">
+        <div ng-if="event.url">
+          <a href="{{ event.url }}"><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
+        </div>
+        <div ng-if="!event.url">
+          <a><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
