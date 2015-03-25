@@ -14,11 +14,10 @@ angular.module('gmicnycApp')
         page: '='
       },
       link: function (scope, element) {
-
+        var w = angular.element($window);
         // handle large logo and navbar logo
         function logoHandler() {
-          /* jshint validthis:true */
-          if (this.pageYOffset >= 100) {
+          if ($window.pageYOffset >= 100) {
             element.removeClass('translucent');
           }
           else {
@@ -29,11 +28,13 @@ angular.module('gmicnycApp')
         scope.$watch('page', function(page){
           if(page === 'Home'){
             element.addClass('translucent');
-            angular.element($window).bind('scroll',logoHandler);
+            w.on('scroll',logoHandler);
+            w.on('touchmove',logoHandler);
           }
           else {
             element.removeClass('translucent');
-            angular.element($window).unbind('scroll', logoHandler);
+            w.off('scroll', logoHandler);
+            w.off('touchmove',logoHandler);
           }
         });
       }

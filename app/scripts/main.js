@@ -1,26 +1,27 @@
 'use strict';
 $(document).ready(function() {
-  // toggle top arrow on desktops
-  if ($(window).width() > 768) {
-    $(window).scroll(function () {
-      var y = $(window).scrollTop();
+  // control visibility of top arrow
+  var topArrowHandler = function () {
+    var y = $(window).scrollTop();
 
-      if (y > $(window).height()) {
-        $('.top-arrow').css('opacity','1');
-      }
-      else {
-        $('.top-arrow').css('opacity','0');
-      }
-      if (y + $(window).height() === $(document).height()) {
-        $('.top-arrow').css('bottom', $('footer').outerHeight() + 20);
-      }
-      else {
-        $('.top-arrow').css('bottom','20px');
-      }
-    });
-  }
+    if (y > $(window).innerHeight()) {
+      $('.top-arrow').css('opacity','1');
+    }
+    else {
+      $('.top-arrow').css('opacity','0');
+    }
+    if (y + $(window).height() >= $(document).height()) {
+      $('.top-arrow').css('bottom', $('footer').outerHeight() + 20);
+    }
+    else {
+      $('.top-arrow').css('bottom','20px');
+    }
+  };
+  $(window).on('scroll', topArrowHandler);
+  $(window).on('touchmove', topArrowHandler);
+
   // smooth scroll to top
-  $('.top-arrow a').click(function(e) {
+  $('.top-arrow a').on('click', function(e) {
     e.preventDefault();
     var target = this.hash;
     $('html, body').stop().animate({
