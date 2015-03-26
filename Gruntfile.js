@@ -253,7 +253,7 @@ module.exports = function (grunt) {
         auth: {
           host: '54.249.235.17',
           port: 40022,
-          authKey: 'gmic'
+          authKey: 'GMICNYC_SFTP'
         },
         cache: 'sftpCache.json',
         src: '<%= config.dist %>/',
@@ -511,6 +511,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy', [
+    'build',
     'sftp-deploy'
   ]);
 };

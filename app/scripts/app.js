@@ -33,13 +33,15 @@ angular
       })
       .when('/topics', {
         title: 'Topics',
-        templateUrl: 'views/topics.html',
-        controller: 'TopicsCtrl'
+        templateUrl: 'views/topics.html'
       })
       .when('/schedule', {
         title: 'Schedule',
         templateUrl: 'views/schedule.html',
         controller: 'ScheduleCtrl'
+      })
+      .when('/gstartup', {
+        templateUrl: 'views/gstartup.html'
       })
       .otherwise({
         redirectTo: '/'
