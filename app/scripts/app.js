@@ -14,7 +14,7 @@ angular
     'leaflet-directive',
     'ngAnimate'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         title: 'Home',
@@ -44,6 +44,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+    $locationProvider.html5Mode(true);
   }).run(['$rootScope', '$location', '$window', function($rootScope, $location, $window) {
     $rootScope.title = 'GMIC New York';
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {

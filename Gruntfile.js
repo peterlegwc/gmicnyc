@@ -16,6 +16,8 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  var modRewrite = require('connect-modrewrite');
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -82,6 +84,7 @@ module.exports = function (grunt) {
         options: {
           middleware: function(connect) {
             return [
+              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
               connect.static(config.app)
@@ -385,14 +388,17 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
+            '.htaccess',
             'images/{,*/}*.webp',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
-        }, {
+        },
+        // {
+        //   src: 'node_modules/apache-server-configs/dist/.htaccess',
+        //   dest: '<%= config.dist %>/.htaccess'
+        // },
+        {
           expand: true,
           dot: true,
           cwd: '.',
