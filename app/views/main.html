@@ -13,22 +13,63 @@
     <div class="row">
       <div class="col-md-8">
         <h3 class="color-primary">Mobile: All About the Customer Experience</h3>
-        <p>The world’s most influential conference on mobile comes to New York City on June 11th. From Beijing to San Francisco and Tokyo to Bangalore, GMIC has been the place for tech leaders to collaborate and educate global participants.</p>
-        <p>A mobile world changes retail, payments, marketing and social infrastructures. At the center of the mobile experience sits the customer. Brands using mobile platforms and technologies to engage their base have discovered unique challenges and opportunities. Capitalizing on mobile through customer engagement is a key to success.</p>
-        <p>At GMIC NYC, realign your mobile strategy to leapfrog the competition. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on optimizing the mobile customer experience.</p>
-        <!-- <p><a class="btn btn-primary" role="button">Register Now</a></p> -->
+        <p>The world’s most influential conference on mobile comes to New York City on June 11th.  From Beijing to San Francisco and Tokyo to Bangalore, GMIC is the where the mobile community gathers to learn about the latest innovations and connect with industry thought leaders.</p>
+        <p>Creating a deeper engagement with your customers via mobile is key. GMIC NYC will address the unique challenges and opportunities that brands using mobile experience everyday. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on how to optimize the mobile customer experience.</p>
       </div>
-      <div class="col-md-4 call-speakers">
-        <h3 class="color-primary color-accent text-center">Call for Speakers</h3>
-        <p>Interested to join the conversation at GMIC New York as a speaker? We welcome proposals from industry leaders with big ideas in mobile. Submit a proposal to speak here.</p>
-        <p class="text-center"><a href="/speakers" class="btn btn-accent btn-lg" role="button">Apply to Speak</a></p>
-        <h3 class="color-primary color-primary text-center">Interested in Sponsoring?</h3>
-        <p class="text-center"><a href="mailto:sean.raman@gwc.net" class="btn btn-primary btn-lg" role="button">Contact Us</a></p>
+      <div class="col-md-offset-1 col-md-3">
+        <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" target="_blank" class="callout-box">
+          <div class="primary">
+            <h5>Register Now <i class="icon fa fa-chevron-circle-right" aria-hidden="true"></i></h5>
+          </div>
+        </a>
+        <a class="callout-box" href="/speakers">
+          <div class="accent">
+            <h5>Call for Speakers <i class="icon fa fa-chevron-circle-right" aria-hidden="true"></i></h5>
+            <p>Interested to join the conversation at GMIC New York as a speaker? We welcome proposals from industry leaders with big ideas in mobile.</p>
+          </div>
+        </a>
+        <a class="callout-box" href="mailto:sean.raman@gwc.net">
+          <div class="spacegrey">
+            <h5>Exhibit or Sponsor <i class="icon fa fa-chevron-circle-right
+" aria-hidden="true"></i></h5>
+            <p>GMIC NYC offers a variety of sponsorship options to fit every budget</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </section>
-<section id="location" class="location">
+<section class="bg-lightgrey">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <h4 class="color-spacegrey">Who Should Attend</h4>
+        <p>Digital Marketers, Brand Managers, Ad Agencies and technology professionals who are leading their organizations’ mobile strategy</p>
+        <img src="images/photo_crowd.jpg" alt="GMIC Crowd" class="img-responsive img-rounded shadow-accent">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <h4 class="color-spacegrey">Why Attend</h4>
+        <p>You’ll learn how to realign your mobile strategy to capitalize on customer engagement and leapfrog the competition!</p>
+        <img src="images/photo_speaking.jpg" alt="GMIC Speaking" class="img-responsive img-rounded shadow-accent">
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <h4 class="color-spacegrey">Topics Include</h4>
+        <ul class="text-small">
+          <li>Brands and Customer Engagement</li>
+          <li>All About Timing? Pieces to the Contextualization Puzzle</li>
+          <li>Cross-Regional Investment Perspectives and the Customer’s Role</li>
+          <li>Making Beacons Work for you</li>
+          <li>Winning Customers in Asia</li>
+          <li>Millennials: Participating in the Brand Experience</li>
+        </ul>
+        <p class="text-center">
+          <a href="/topics" class="btn btn-primary btn-sm outline" role="button">Learn More</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="location" class="location bg-accent">
   <div class="container-fluid">
     <div class="row">
         <leaflet id="map" defaults="defaults" center="center" markers="markers"></leaflet>
@@ -38,7 +79,7 @@
 <section id="gmics" class="gmics">
   <div class="container">
     <div class="row">
-      <h3 class="color-primary text-center">GMIC Locations</h3>
+      <h3 class="color-spacegrey text-center">GMIC Locations</h3>
       <div class="col-sm-3" ng-repeat="event in gmics">
         <div ng-if="event.url">
           <a href="{{ event.url }}"><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
