@@ -14,6 +14,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $accent: #03a9f4;
 $spacegrey: #6B717E;
 $lightgrey: #E6E8E6;
+$gwc: #e21616;
+$gmic: #0e71cc;
 
 /* bootstrap customization */
 // custom transition effects
@@ -53,7 +55,6 @@ $lightgrey: #E6E8E6;
 }
 .btn.outline {
     background: none;
-    padding: 8px 16px;
 }
 .btn-primary.outline {
     border: 2px solid $brand-primary;
@@ -97,49 +98,62 @@ section.img-heading {
   padding-bottom: 50px;
   border-bottom: 1px solid lighten($accent,30%);
 }
+.navbar-default {
+  .navbar-nav > li > a.btn-register {
+    font-weight: bold;
 
-footer {
-  border-top: 1px solid $lightgrey;
-  .footer {
-    font-size: 12px;
-    color: #777;
+    > span {
+      color: $brand-primary;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
   }
-  .social-media {
-    float: right;
+  .navbar-brand {
+    padding: 20px;
+    img {
+      @extend .transition-medium;
+      // opacity: 1;
+    }
+  }
+}
+.footer {
+  border-top: 1px solid $lightgrey;
+  font-size: 10px;
+  color: $gray-light;
+
+  .footer-nav {
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    span {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-right: 1em;
+    }
     ul {
-      margin-top: 10px;
+      display: inline-block;
       margin-bottom: 0;
       li {
-        padding: 0;
-        a {
-          font-size: 2rem;
-          padding: 1rem;
-          @extend .transition-medium;
-          &.sm-fb {
-            @include top-shadow(5px,#3b5998);
-            color: #3b5998;
-            &:hover {
-              @include top-shadow(4em,#3b5998);
-              color: #fff;
-            }
-          }
-          &.sm-tw {
-            @include top-shadow(5px,#4099ff);
-            color: #4099ff;
-            &:hover {
-              @include top-shadow(4em,#4099ff);
-              color: #fff;
-            }
-          }
-          &.sm-in {
-            @include top-shadow(5px,#007bb6);
-            color: #007bb6;
-            &:hover {
-              @include top-shadow(4em,#007bb6);
-              color: #fff;
-            }
-          }
-        }
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+    }
+    a {
+      color: $gray-light;
+      &:hover {
+        color: $link-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .social-media {
+    li {
+      padding: 0;
+      a {
+        font-size: 3rem;
+        padding: 1rem;
+        @extend .transition-medium;
       }
     }
   }
@@ -163,28 +177,44 @@ footer {
   }
 }
 
-.navbar-default {
-  .navbar-nav > li > a.btn-register {
-    font-weight: bold;
-
-    > span {
-      color: $brand-primary;
-
-      &:hover {
-        color: $link-hover-color;
-      }
+/* pages */
+.callout-box {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  div {
+    @extend .transition-medium;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
-  .navbar-brand {
-    padding: 20px;
-    img {
-      @extend .transition-medium;
-      // opacity: 1;
+  div.primary {
+    background-color: $brand-primary;
+  }
+  div.accent {
+    background-color: $accent;
+  }
+  div.spacegrey {
+    background-color: lighten($spacegrey,10%);
+  }
+  &:hover {
+    text-decoration: none;
+    div.primary {
+      background-color: darken($brand-primary,10%);
+    }
+    div.accent {
+      background-color: darken($accent,10%);
+    }
+    div.spacegrey {
+      background-color: darken($spacegrey,10%);
     }
   }
 }
-
-/* pages */
 .venue {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -294,33 +324,30 @@ footer {
 }
 
 .gmics {
-  div {
-    text-align: center;
-    a {
-      color: $spacegrey;
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        opacity: 1;
-        @extend .transition-medium;
-        @media (min-width: $screen-sm-min) {
-          opacity: 0.6;
-        }
+  h5 {
+    margin-bottom: 0;
+  }
+  a {
+    color: $spacegrey;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      opacity: 1;
+      @extend .transition-medium;
+      @media (min-width: $screen-sm-min) {
+        opacity: 0.6;
       }
-      &:hover {
-        color: $text-color;
-        text-decoration: none;
-        img {
-          @media (min-width: $screen-sm-min) {
-            opacity: 1;
-          }
+    }
+    &:hover {
+      color: $text-color;
+      text-decoration: none;
+      img {
+        @media (min-width: $screen-sm-min) {
+          opacity: 1;
         }
       }
     }
-  }
-  h5 {
-    margin-bottom: 0;
   }
 }
 
@@ -394,7 +421,7 @@ a:hover {
 .color-spacegrey {
   color: $spacegrey;
 }
-.bg-primary {
+.bg-brand {
   background-color: $brand-primary;
 }
 .bg-accent {
@@ -416,40 +443,6 @@ a:hover {
 }
 .translucent {
   opacity: 0;
-}
-a.callout-box {
-  div {
-    @extend .transition-medium;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 0.8em;
-    margin-bottom: 0.5em;
-    h5 {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-  }
-  div.primary {
-    background-color: $brand-primary;
-  }
-  div.accent {
-    background-color: $accent;
-  }
-  div.spacegrey {
-    background-color: lighten($spacegrey,10%);
-  }
-  &:hover {
-    text-decoration: none;
-    div.primary {
-      background-color: darken($brand-primary,10%);
-    }
-    div.accent {
-      background-color: darken($accent,10%);
-    }
-    div.spacegrey {
-      background-color: darken($spacegrey,10%);
-    }
-  }
 }
 
 /* Angular animations */

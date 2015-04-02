@@ -12,7 +12,7 @@ angular.module('gmicnycApp')
     angular.extend($scope, {
         desktopCenter: {
           lat: 40.7530026,
-          lng: -73.9732017,
+          lng: -73.9832017,
           zoom: 14
         },
         center: {
@@ -92,7 +92,7 @@ angular.module('gmicnycApp')
         city: 'Taipei',
         date: 'December, 2015',
         img: 'images/gmics/gmic-taipei.png',
-        url: ''
+        url: '//taipei.thegmic.com/'
       },
     ];
 
