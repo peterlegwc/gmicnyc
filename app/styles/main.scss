@@ -99,17 +99,17 @@ section.img-heading {
   border-bottom: 1px solid lighten($accent,30%);
 }
 .navbar-default {
-  .navbar-nav > li > a.btn-register {
-    font-weight: bold;
+/*   .navbar-nav > li > a.btn-register {
+  font-weight: bold;
 
-    > span {
-      color: $brand-primary;
+  > span {
+    color: $brand-primary;
 
-      &:hover {
-        color: $link-hover-color;
-      }
+    &:hover {
+      color: $link-hover-color;
     }
   }
+} */
   .navbar-brand {
     padding: 20px;
     img {
@@ -229,15 +229,41 @@ section.img-heading {
   background-repeat: repeat-y;
 }
 
-.speakers {
-  background-color: $lightgrey;
-
+.speakers-grid {
+  li.speaker-expanded > a::after {
+    top: auto;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: $spacegrey;
+    border-width: 15px;
+    left: 50%;
+    margin: -20px 0 0 -15px;
+  }
+  .speaker-expander {
+    position: absolute;
+    background: $spacegrey;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+  }
+  .speaker-expander-inner {
+    padding: 20px;
+    height: 100%;
+  }
   .box {
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 0px 7px 5px -5px $accent;
     border-radius: 6px;
+    margin-bottom: 1em;
     &::after {
       content: "";
       position: absolute;
@@ -431,7 +457,7 @@ a:hover {
   background-color: lighten($lightgrey,5%);
 }
 .shadow-accent {
-  box-shadow: 0px 7px 5px -5px $accent;
+  box-shadow: 0px 5px 5px -5px $accent;
 }
 .no-vpd {
   padding-top: 0;
