@@ -262,8 +262,17 @@ section.img-heading {
     overflow: hidden;
     position: relative;
     text-align: center;
-    border-radius: 6px;
     margin-bottom: 1em;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 50;
+      background: linear-gradient(135deg, rgba(156,39,176,0.2) 0%,rgba(3,169,244,0.15) 50%,rgba(156,39,176,0.2) 100%);
+    }
     &::after {
       content: "";
       position: absolute;
@@ -273,7 +282,6 @@ section.img-heading {
       height: 100%;
       z-index: 100;
       background-color: transparent;
-      border-radius: 6px;
       @extend .transition-fast;
     }
     &:hover::after {
@@ -301,7 +309,6 @@ section.img-heading {
       bottom: 0;
       left: 0;
       width: 100%;
-      border-radius: 0 0 6px 6px;
       h5 {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -317,14 +324,50 @@ section.img-heading {
     }
   }
 }
-
-.sponsorship {
-  color: #fff;
-
-  .icon {
-    font-size: 3rem;
-    position: relative;
-    top: 10px
+.sessions {
+  .session {
+    .time, .format, .topic {
+      @media (max-width: $screen-xs-max) {
+        font-size: 0.7em;
+      }
+      font-size: 0.8em;
+    }
+    .info {
+      border-left: 2px dotted $lightgrey;
+    }
+    [ng-click], [data-ng-click] {
+      cursor: pointer;
+    }
+    .event {
+      color: $brand-primary;
+    }
+    .break {
+      color: lighten($spacegrey,25%);
+    }
+    .engagement {
+      color: #3949ab;
+    }
+    .omnichannel {
+      color: #827717;
+    }
+    .vcs {
+      color: #558b2f;
+    }
+    .beacons {
+      color: #ff8f00;
+    }
+    .asia {
+      color: $gwc;
+    }
+    .millenials {
+      color: #00838f;
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $lightgrey;
+    &.last {
+      border-bottom: 0;
+    }
   }
 }
 
@@ -390,10 +433,6 @@ section.img-heading {
     min-height: 400px;
   }
 }
-.bg-strip.sponsorship {
-  background-image: url('../images/section_timesquare.jpg');
-  background-position: center center;
-}
 .bg-strip.topics {
   background-image: url('../images/section_topics.jpg');
   background-position: center 35%;
@@ -457,7 +496,10 @@ a:hover {
   background-color: lighten($lightgrey,5%);
 }
 .shadow-accent {
-  box-shadow: 0px 5px 5px -5px $accent;
+  box-shadow: 0px 5px $accent;
+}
+.img-center {
+  margin: 0 auto;
 }
 .no-vpd {
   padding-top: 0;
@@ -472,18 +514,30 @@ a:hover {
 }
 
 /* Angular animations */
-.ng-fadeInOut {
+.ng-fadeInOut, .ng-slideInOut {
   @extend .transition-fast;
 }
 .ng-fadeInOut.ng-hide-remove,
-.ng-fadeInOut.ng-hide-add.ng-hide-add-active {
+.ng-slideInOut.ng-hide-remove,
+.ng-fadeInOut.ng-hide-add.ng-hide-add-active,
+.ng-slideInOut.ng-hide-add.ng-hide-add-active {
   opacity: 0;
   display: block !important;
 }
 .ng-fadeInOut.ng-hide-add,
-.ng-fadeInOut.ng-hide-remove.ng-hide-remove-active {
+.ng-slideInOut.ng-hide-add,
+.ng-fadeInOut.ng-hide-remove.ng-hide-remove-active,
+.ng-slideInOut.ng-hide-remove.ng-hide-remove-active {
   opacity: 1;
   display: block !important;
+}
+.ng-slideInOut.ng-hide-remove,
+.ng-slideInOut.ng-hide-add.ng-hide-add-active {
+  max-height: 0;
+}
+.ng-slideInOut.ng-hide-add,
+.ng-slideInOut.ng-hide-remove.ng-hide-remove-active {
+  max-height: 600px; // might want to calculate this in javascript instead
 }
 /* SpinKit loader https://github.com/tobiasahlin/SpinKit */
 .spinner-container {

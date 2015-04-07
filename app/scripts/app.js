@@ -41,6 +41,7 @@ angular
         controller: 'ScheduleCtrl'
       })
       .when('/gstartup', {
+        title: 'G-Startup Competition',
         templateUrl: 'views/gstartup.html'
       })
       .otherwise({

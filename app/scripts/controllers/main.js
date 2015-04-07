@@ -90,7 +90,7 @@ angular.module('gmicnycApp')
       {
         name: 'GMIC Taipei',
         city: 'Taipei',
-        date: 'December, 2015',
+        date: 'December 15-16, 2015',
         img: 'images/gmics/gmic-taipei.png',
         url: '//taipei.thegmic.com/'
       },

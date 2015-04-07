@@ -1,1 +1,35 @@
-<p>This is the schedule view.</p>
+<section id="schedule">
+  <div class="container">
+    <h3 class="color-primary text-center">Schedule</h3>
+    <div class="text-small text-center">Thursday, June 11, 2015</div>
+    <div class="sessions">
+      <div class="row" ng-repeat="session in agenda | orderBy: session.startTime">
+        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 session" ng-class="{last:$last}">
+          <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey">
+            <div ng-bind="parseDate(session.startTime) | date:'shortTime'"></div>
+            <div ng-bind="parseDate(session.endTime) | date:'shortTime'"></div>
+          </div>
+          <div class="col-xs-9 col-sm-8 col-md-9 info" ng-click="toggleDesc()">
+            <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.format=='Break'}" ng-bind="session.title"></h4>
+            <div class="ng-slideInOut" ng-show="session.show">
+              <div ng-bind=""></div>
+            </div>
+            <div ng-if="session.moderator" class="text-small">
+              <span class="color-primary">Moderator</span>:
+              <div>{{ session.moderator.firstname }} {{ session.moderator.lastname }}, {{ session.moderator.title }}, <strong>{{ session.moderator.company }}</strong></div>
+            </div>
+            <div ng-if="session.speakers" class="text-small">
+              <span class="color-primary">Speakers</span>:
+              <ul class="list-unstyled">
+                <li ng-repeat="speaker in session.speakers">{{ speaker.firstname }} {{ speaker.lastname }}, {{ speaker.title }}, <strong>{{ speaker.company }}</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-2 col-md-1 format">
+            <div class="color-spacegrey" ng-bind="session.format"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

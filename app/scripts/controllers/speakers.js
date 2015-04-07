@@ -22,7 +22,7 @@ angular.module('gmicnycApp')
         'lastname': 'McKinley',
         'company': 'MobileRQ',
         'title': 'CEO',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/tyler-mckinley.jpg',
         'bio': ''
       },{
         'firstname': 'David',
@@ -36,21 +36,21 @@ angular.module('gmicnycApp')
         'lastname': 'Arbour',
         'company': 'Plyfe',
         'title': 'Co-founder & CMO',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/jeff-arbour.jpg',
         'bio': ''
       },{
         'firstname': 'Fabio',
         'lastname': 'Sisinni',
         'company': 'Shopkick',
         'title': 'VP Product',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/fabio-sisinni.jpg',
         'bio': ''
       },{
         'firstname': 'Teal',
         'lastname': 'Newland',
         'company': 'StumbleUpon',
         'title': 'VP of Marketing, Revenue, Partnerships',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/teal-newland.jpg',
         'bio': ''
       },{
         'firstname': 'Steve',
@@ -61,7 +61,7 @@ angular.module('gmicnycApp')
         'bio': 'Steve, an Electronic Engineering major, established his first production company in 2001 producing movie trailers, motion graphics, music videos and commercials; and was also producing over 400 hours of branded, short-form fashion and beauty content for the four biggest lifestyle publishers. He proposed that online video content should be as \'connected\' as the rest of the web; linking pixels to people, products and information was the goal. He engineered the world\'s first shoppable video player which lead to the most powerful interactive video platform to help hundreds of global brands realize their video potential.'
       },{
         'firstname': 'Jill',
-        'lastname': 'Hill',
+        'lastname': 'Wilson',
         'company': 'SGN',
         'title': 'SVP of Game Development',
         'picture': '/images/speakers/jill-wilson.jpg',
@@ -71,14 +71,14 @@ angular.module('gmicnycApp')
         'lastname': 'Herman',
         'company': 'ChatID',
         'title': 'Founder & CEO',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/dan-herman.jpg',
         'bio': ''
       },{
         'firstname': 'Wesley',
         'lastname': 'Barrow',
         'company': 'Nomi',
         'title': 'Founder',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/wesley-barrow.jpg',
         'bio': ''
       },{
         'firstname': 'Ryan',
@@ -93,6 +93,20 @@ angular.module('gmicnycApp')
         'company': 'EPAM',
         'title': 'Head of Mobile Competency Center',
         'picture': '/images/speakers/yev-galper.jpg',
+        'bio': ''
+      },{
+        'firstname': 'Nick',
+        'lastname': 'Rockwell',
+        'company': 'Condé Nast',
+        'title': 'CTO',
+        'picture': '/images/speakers/nick-rockwell.jpg',
+        'bio': ''
+      },{
+        'firstname': 'Alex',
+        'lastname': 'Wang',
+        'company': 'Baidu',
+        'title': 'Head of New Product',
+        'picture': '/images/speakers/generic-male.png',
         'bio': ''
       }
     ];
