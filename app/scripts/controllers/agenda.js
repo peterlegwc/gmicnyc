@@ -18,8 +18,16 @@ angular.module('gmicnycApp')
         'topic': '',
         'moderator': '',
         'speakers': '',
-        'format': 'Event',
-        'tag': 'event'
+        'format': 'Event'
+      }, {
+        'title': 'Why Companies Must Invest in the Customer Experience',
+        'startTime': '2015-06-11 09:35:00',
+        'endTime': '2015-06-11 09:55:00',
+        'description': '',
+        'topic': '',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Presentation'
       }, {
         'title': 'Brands and Customer Engagement',
         'startTime': '2015-06-11 10:00:00',
@@ -51,22 +59,20 @@ angular.module('gmicnycApp')
             'bio': ''
           }
         ],
-        'format': 'Panel',
-        'tag': 'engagement'
+        'format': 'Panel'
       }, {
         'title': 'Coffee Break',
         'startTime': '2015-06-11 10:50:00',
-        'endTime': '2015-06-11 11:10:00',
-        'description': '20 minute coffee break',
+        'endTime': '2015-06-11 11:00:00',
+        'description': '10 minute coffee break',
         'topic': 'Break',
         'moderator': '',
         'speakers': '',
-        'format': 'Break',
-        'tag': 'break'
+        'format': 'Break'
       }, {
-        'title': 'All About Timing? Pieces to the Contextualization Puzzle',
-        'startTime': '2015-06-11 11:10:00',
-        'endTime': '2015-06-11 12:00:00',
+        'title': 'All About Content? Pieces to the Contextualization Puzzle',
+        'startTime': '2015-06-11 11:00:00',
+        'endTime': '2015-06-11 11:50:00',
         'description': 'Creating a truly personalized customer experience that seamlessly spans digital and brick-and-mortar is now possible. The journey might start on desktop, but an evolving and aspirational message winding its way through a customer’s day has tremendous guiding influence. Learn how to move beyond a multichannel strategy by mastering an omnichannel approach that elevates your customer experience to new heights.',
         'topic': 'Contextualization, Omni-channel, User Experience, Personlization, Multi-channel',
         'moderator': {
@@ -101,8 +107,16 @@ angular.module('gmicnycApp')
             'bio': ''
           }
         ],
-        'format': 'Panel',
-        'tag': 'omnichannel'
+        'format': 'Panel'
+      }, {
+        'title': 'Mobile Wallet',
+        'startTime': '2015-06-11 11:50:00',
+        'endTime': '2015-06-11 12:30:00',
+        'description': '',
+        'topic': '',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Presentation'
       }, {
         'title': 'Lunch',
         'startTime': '2015-06-11 12:30:00',
@@ -111,8 +125,16 @@ angular.module('gmicnycApp')
         'topic': 'Break',
         'moderator': '',
         'speakers': '',
-        'format': 'Break',
-        'tag': 'break'
+        'format': 'Break'
+      }, {
+        'title': 'SoLoMo Marketing',
+        'startTime': '2015-06-11 13:15:00',
+        'endTime': '2015-06-11 13:45:00',
+        'description': '',
+        'topic': '',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Presentation'
       }, {
         'title': 'Making Beacons Work for You',
         'startTime': '2015-06-11 13:50:00',
@@ -144,8 +166,25 @@ angular.module('gmicnycApp')
             'bio': ''
           }
         ],
-        'format': 'Panel',
-        'tag': 'beacons'
+        'format': 'Panel'
+      }, {
+        'title': 'Media in Mobile',
+        'startTime': '2015-06-11 14:45:00',
+        'endTime': '2015-06-11 15:20:00',
+        'description': '',
+        'topic': '',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Presentation'
+      }, {
+        'title': 'Coffee Break',
+        'startTime': '2015-06-11 15:20:00',
+        'endTime': '2015-06-11 15:30:00',
+        'description': '10 minute coffee break',
+        'topic': 'Break',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Break'
       }, {
         'title': 'Marketing to Millenials: The Holy Grail',
         'startTime': '2015-06-11 15:30:00',
@@ -163,18 +202,7 @@ angular.module('gmicnycApp')
             'bio': 'Ryan Matzner is the Director of Strategy at Fueled, a mobile design and development shop based in NYC and London. He has a decade of online and mobile marketing experience, working with clients such as American Express, Condé Nast, Ideeli, Thrillist, HBO, QuizUp, Barneys, and Gilt Groupe. He can be found on Facebook, Twitter, LinkedIn and Google+.'
           }
         ],
-        'format': 'Panel',
-        'tag': 'millenials'
-      }, {
-        'title': 'Coffee Break',
-        'startTime': '2015-06-11 15:10:00',
-        'endTime': '2015-06-11 15:30:00',
-        'description': '20 minute coffee break',
-        'topic': 'Break',
-        'moderator': '',
-        'speakers': '',
-        'format': 'Break',
-        'tag': 'break'
+        'format': 'Panel'
       }, {
         'title': 'Sand Hill Road to Wall Street: VC Perspectives',
         'startTime': '2015-06-11 16:25:00',
@@ -183,8 +211,7 @@ angular.module('gmicnycApp')
         'topic': 'VCs Perspectives on What Makes a Company Great',
         'moderator': '',
         'speakers': '',
-        'format': 'Panel',
-        'tag': 'vcs'
+        'format': 'Panel'
       }
     ];
     $scope.parseDate = function(mySqlDate) {
