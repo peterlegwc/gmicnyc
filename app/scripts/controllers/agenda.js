@@ -2,18 +2,13 @@
 
 /**
  * @ngdoc function
- * @name gmicnycApp.controller:ScheduleCtrl
+ * @name gmicnycApp.controller:AgendaCtrl
  * @description
  * # ScheduleCtrl
  * Controller of the gmicnycApp
  */
 angular.module('gmicnycApp')
-  .controller('ScheduleCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AgendaCtrl', function ($scope) {
     $scope.agenda = [
       {
         'title': 'Opening',
@@ -120,8 +115,8 @@ angular.module('gmicnycApp')
         'tag': 'break'
       }, {
         'title': 'Making Beacons Work for You',
-        'startTime': '2015-06-11 14:05:00',
-        'endTime': '2015-06-11 14:55:00',
+        'startTime': '2015-06-11 13:50:00',
+        'endTime': '2015-06-11 14:40:00',
         'description': 'Beacon triggered marketing is a relatively new but highly effective way to deliver the right message to the right customer at exactly the right time. Targeting moving customers with location technology promises to boost retail sales but also adds a layer of complexity to customer relationships. Join this panel session led by early adopters to discover potential ways beacons can help you monetize your mobile audience, increase engagement with mobile users and enhance the shopping experience.',
         'topic': 'Beacons, Real Time Retail',
         'moderator': {
@@ -172,8 +167,8 @@ angular.module('gmicnycApp')
         'tag': 'millenials'
       }, {
         'title': 'Coffee Break',
-        'startTime': '2015-06-11 16:20:00',
-        'endTime': '2015-06-11 16:40:00',
+        'startTime': '2015-06-11 15:10:00',
+        'endTime': '2015-06-11 15:30:00',
         'description': '20 minute coffee break',
         'topic': 'Break',
         'moderator': '',
@@ -181,9 +176,9 @@ angular.module('gmicnycApp')
         'format': 'Break',
         'tag': 'break'
       }, {
-        'title': 'San Hill Road to Wall Street: VC Perspectives',
-        'startTime': '2015-06-11 16:40:00',
-        'endTime': '2015-06-11 17:30:00',
+        'title': 'Sand Hill Road to Wall Street: VC Perspectives',
+        'startTime': '2015-06-11 16:25:00',
+        'endTime': '2015-06-11 17:15:00',
         'description': 'Investors from Sand Hill Road to Wall Street are making more big bets on billion dollars ideas than ever before. In this session, investors square off on what makes a great startup, a great exit and a great public company. To be sure, creating an unbeatable customer experience is the key ingredient to success.',
         'topic': 'VCs Perspectives on What Makes a Company Great',
         'moderator': '',

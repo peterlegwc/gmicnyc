@@ -1,9 +1,9 @@
-<section id="schedule">
+<section id="agenda">
   <div class="container">
-    <h3 class="color-primary text-center">Schedule</h3>
+    <h3 class="color-primary text-center">Agenda</h3>
     <div class="text-small text-center">Thursday, June 11, 2015</div>
     <div class="sessions">
-      <div class="row" ng-repeat="session in agenda | orderBy: session.startTime">
+      <div class="row" ng-repeat="session in agenda | dateString:false">
         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 session" ng-class="{last:$last}">
           <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey">
             <div ng-bind="parseDate(session.startTime) | date:'shortTime'"></div>

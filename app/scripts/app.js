@@ -35,10 +35,10 @@ angular
         title: 'Topics',
         templateUrl: 'views/topics.html'
       })
-      .when('/schedule', {
-        title: 'Schedule',
-        templateUrl: 'views/schedule.html',
-        controller: 'ScheduleCtrl'
+      .when('/agenda', {
+        title: 'Agenda',
+        templateUrl: 'views/agenda.html',
+        controller: 'AgendaCtrl'
       })
       .when('/gstartup', {
         title: 'G-Startup Competition',
