@@ -12,7 +12,7 @@
           <div class="col-xs-9 col-sm-8 col-md-9 info" ng-click="toggleDesc()">
             <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.format=='Break'}" ng-bind="session.title"></h4>
             <div class="ng-slideInOut" ng-show="session.show">
-              <div ng-bind=""></div>
+              <div ng-bind="session.description"></div>
             </div>
             <div ng-if="session.moderator" class="text-small">
               <span class="color-primary">Moderator</span>:

@@ -4,7 +4,7 @@
       <h3 class="color-primary text-center">Speakers</h3>
       <ul class="list-unstyled speakers-grid">
         <li class="col-xs-6 col-sm-3 col-md-2" ng-repeat="speaker in speakers | orderBy: 'lastname'">
-          <a data-title="{{ speaker.firstname }} {{ speaker.lastname }}" data-description="{{ speaker.bio }}">
+          <a role="button" ng-click="setDialog()">
             <div class="box shadow-accent">
               <img ng-src="{{ speaker.picture }}" alt="{{ speaker.firstname }} {{ speaker.lastname }}" class="img-responsive">
               <div class="caption">
