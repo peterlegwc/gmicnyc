@@ -17,6 +17,7 @@ $(document).ready(function() {
       $('.top-arrow').css('bottom','20px');
     }
   };
+  $(window).on('resize', topArrowHandler);
   $(window).on('scroll', topArrowHandler);
   $(window).on('touchmove', topArrowHandler);
 

@@ -120,6 +120,22 @@ angular.module('gmicnycApp')
         'lastname': 'Wang',
         'company': 'Baidu',
         'title': 'Head of New Product',
+        'picture': '/images/speakers/alex-wang.jpg',
+        'bio': ''
+      },{
+        'id': 15,
+        'firstname': 'Mark',
+        'lastname': 'Egerman',
+        'company': 'Cover',
+        'title': 'Co-founder',
+        'picture': '/images/speakers/generic-male.png',
+        'bio': ''
+      },{
+        'id': 16,
+        'firstname': 'Brent',
+        'lastname': 'Hieggelke',
+        'company': 'Urban Airship',
+        'title': 'Chief Mobile Evangelist',
         'picture': '/images/speakers/generic-male.png',
         'bio': ''
       }

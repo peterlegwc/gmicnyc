@@ -1,0 +1,82 @@
+/* Angular animations */
+.ng-fadeInOut, .ng-slideInOut {
+  @extend .transition-fast;
+}
+.ng-fadeInOut.ng-hide-remove,
+.ng-slideInOut.ng-hide-remove,
+.ng-fadeInOut.ng-hide-add.ng-hide-add-active,
+.ng-slideInOut.ng-hide-add.ng-hide-add-active {
+  opacity: 0;
+  display: block !important;
+}
+.ng-fadeInOut.ng-hide-add,
+.ng-slideInOut.ng-hide-add,
+.ng-fadeInOut.ng-hide-remove.ng-hide-remove-active,
+.ng-slideInOut.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+  display: block !important;
+}
+.ng-slideInOut.ng-hide-remove,
+.ng-slideInOut.ng-hide-add.ng-hide-add-active {
+  max-height: 0;
+}
+.ng-slideInOut.ng-hide-add,
+.ng-slideInOut.ng-hide-remove.ng-hide-remove-active {
+  max-height: 600px; // might want to calculate this in javascript instead
+}
+
+/* SpinKit loader https://github.com/tobiasahlin/SpinKit */
+.spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid $lightgrey;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 60px 5px rgba(0,0,0,0.5);
+}
+.spinner {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.spinner > div {
+  background-color: $spacegrey;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.spinner .rect2 {
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+  }
+}
