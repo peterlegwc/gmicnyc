@@ -69,7 +69,7 @@ angular.module('gmicnycApp')
       {
         name: 'GMIC Bangalore',
         city: 'Bangalore',
-        date: 'September 16-17, 2015',
+        date: 'September 9-10, 2015',
         img: 'images/gmics/gmic-bangalore.png',
         url: '//bangalore.thegmic.com'
       },

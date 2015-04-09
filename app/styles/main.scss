@@ -16,18 +16,3 @@
 @import "gmicnyc-speakers";
 @import "gmicnyc-agenda";
 @import "gmicnyc-responsive";
-
-.sponsors {
-  h4 {
-    margin-top: 2em;
-    color: $spacegrey;
-  }
-  .sponsor {
-    padding: 10px;
-    box-shadow: -1px -1px 0px 0px darken($lightgrey,5%) inset, 1px 1px 0px 0px lighten($lightgrey,5%) inset;
-    @extend .transition-medium;
-    &:hover {
-      box-shadow: -2px -2px 0px 1px darken($lightgrey,10%) inset, 1px 1px 0px 0px darken($lightgrey,5%) inset;
-    }
-  }
-}

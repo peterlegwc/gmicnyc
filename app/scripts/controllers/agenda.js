@@ -20,7 +20,7 @@ angular.module('gmicnycApp')
         'speakers': '',
         'format': 'Event'
       }, {
-        'title': 'Why Companies Must Invest in the Customer Experience',
+        'title': 'Create a Mobile Experience That Keeps Your Customers Coming Back',
         'startTime': '2015-06-11 09:35:00',
         'endTime': '2015-06-11 09:55:00',
         'description': '',
@@ -82,7 +82,7 @@ angular.module('gmicnycApp')
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'All About Content? Pieces to the Contextualization Puzzle',
+        'title': 'Contextualization: Creating Powerful OmniChannel Customer Experiences',
         'startTime': '2015-06-11 11:00:00',
         'endTime': '2015-06-11 11:50:00',
         'description': '',
@@ -125,7 +125,7 @@ angular.module('gmicnycApp')
         ],
         'format': 'Panel'
       }, {
-        'title': 'Mobile Wallet',
+        'title': 'Mobile Wallet:  It\'s not just about Payments',
         'startTime': '2015-06-11 11:50:00',
         'endTime': '2015-06-11 12:30:00',
         'description': '',
@@ -237,6 +237,14 @@ angular.module('gmicnycApp')
             'title': 'Co-founder',
             'picture': '/images/speakers/generic-male.png',
             'bio': ''
+          },{
+            'id': 7,
+            'firstname': 'Steve',
+            'lastname': 'Callanan',
+            'company': 'Wirewax',
+            'title': 'Co-founder & CEO',
+            'picture': '/images/speakers/steve-callanan.jpg',
+            'bio': 'Steve, an Electronic Engineering major, established his first production company in 2001 producing movie trailers, motion graphics, music videos and commercials; and was also producing over 400 hours of branded, short-form fashion and beauty content for the four biggest lifestyle publishers. He proposed that online video content should be as \'connected\' as the rest of the web; linking pixels to people, products and information was the goal. He engineered the world\'s first shoppable video player which lead to the most powerful interactive video platform to help hundreds of global brands realize their video potential.'
           }
         ],
         'format': 'Panel'

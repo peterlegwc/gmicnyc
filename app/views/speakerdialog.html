@@ -3,8 +3,10 @@
   <div class="fs-dialog-content shadow-accent">
     <button type="button" class="close" data-dialog-close aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <img ng-src="{{ picture }}" alt="{{ firstname }} {{ lastname }}">
-    <h5 class="color-primary">{{ firstname }} {{ lastname }}</h5>
-    <div>{{ title }}, <strong>{{ company }}</strong></div>
-    <div>{{ bio }}</div>
+    <h4 class="color-primary">{{ firstname }} {{ lastname }}</h4>
+    <div>
+      <p class="color-spacegrey">{{ title }}, <strong>{{ company }}</strong></p>
+    </div>
+    <div><p>{{ bio }}</p></div>
   </div>
 </div>

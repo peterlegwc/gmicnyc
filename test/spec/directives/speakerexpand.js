@@ -13,8 +13,9 @@ describe('Directive: speakerExpand', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<div speaker-expand></div>');
+    element = angular.element('<speaker-expand></div>');
     element = $compile(element)(scope);
+    // TODO: implement template cache so test works with templateUrl
     // expect(element.text()).toBe('this is the speakerExpand directive');
   }));
 });

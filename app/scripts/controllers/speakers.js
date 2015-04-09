@@ -128,7 +128,7 @@ angular.module('gmicnycApp')
         'lastname': 'Egerman',
         'company': 'Cover',
         'title': 'Co-founder',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/mark-egerman.jpg',
         'bio': ''
       },{
         'id': 16,
@@ -136,7 +136,7 @@ angular.module('gmicnycApp')
         'lastname': 'Hieggelke',
         'company': 'Urban Airship',
         'title': 'Chief Mobile Evangelist',
-        'picture': '/images/speakers/generic-male.png',
+        'picture': '/images/speakers/brent-hieggelke.jpg',
         'bio': ''
       }
     ];
