@@ -257,6 +257,15 @@ angular.module('gmicnycApp')
         'moderator': '',
         'speakers': '',
         'format': 'Panel'
+      }, {
+        'title': 'Networking Reception',
+        'startTime': '2015-06-11 17:15:00',
+        'endTime': '2015-06-11 18:30:00',
+        'description': '',
+        'topic': '',
+        'moderator': '',
+        'speakers': '',
+        'format': 'Event'
       }
     ];
     $scope.parseDate = function(mySqlDate) {
