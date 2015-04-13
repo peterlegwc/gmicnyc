@@ -143,7 +143,7 @@ angular.module('gmicnycApp')
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'SoLoMo Marketing',
+        'title': 'Gamifying the Customer Experience',
         'startTime': '2015-06-11 13:15:00',
         'endTime': '2015-06-11 13:45:00',
         'description': '',
