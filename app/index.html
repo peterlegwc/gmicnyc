@@ -50,7 +50,7 @@
             <li><a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" target="_blank"><span>Register</span></a></li>
             <li><a href="/agenda">Agenda</a></li>
             <li><a href="/topics">Topics</a></li>
-            <li><a href="/speakers">Speaking</a></li>
+            <li><a href="/speakers">Speakers</a></li>
             <li><a href="/gstartup">Competition</a></li>
           </ul>
         </div>
@@ -122,6 +122,8 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -135,6 +137,22 @@
       ga('create','UA-19421925-23');
       // done on angular route change
       // ga('send','pageview');
+
+      adroll_adv_id = "T4RULSFRGFGUPFUVBFHCCP";
+      adroll_pix_id = "VDLEEDQETBC5NJDGKQRFUE";
+      (function () {
+      var oldonload = window.onload;
+      window.onload = function(){
+         __adroll_loaded=true;
+         var scr = document.createElement("script");
+         var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+         scr.setAttribute('async', 'true');
+         scr.type = "text/javascript";
+         scr.src = host + "/j/roundtrip.js";
+         ((document.getElementsByTagName('head') || [null])[0] ||
+          document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+         if(oldonload){oldonload()}};
+      }());
     </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->

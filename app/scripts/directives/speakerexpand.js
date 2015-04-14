@@ -25,10 +25,10 @@ angular.module('gmicnycApp')
             });
             scope.firstname = speaker.firstname;
             scope.lastname = speaker.lastname;
-            scope.picture = speaker.picture;
             scope.bio = speaker.bio;
             scope.title = speaker.title;
             scope.company = speaker.company;
+            scope.twitter = speaker.twitter;
 
             var closeDialog = function() {
               angular.element('.fs-dialog').removeClass('fs-dialog-open').addClass('fs-dialog-close').delay(250).queue(function() {

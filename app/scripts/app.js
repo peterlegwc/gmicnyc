@@ -11,8 +11,10 @@
 angular
   .module('gmicnycApp', [
     'ngRoute',
+    'ngResource',
     'leaflet-directive',
-    'ngAnimate'
+    'ngAnimate',
+    'ngSanitize'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider

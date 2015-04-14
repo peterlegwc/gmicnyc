@@ -34,8 +34,8 @@ angular.module('gmicnycApp')
             'lastname': 'Wang',
             'company': 'Baidu',
             'title': 'Head of New Product',
-            'picture': '/images/speakers/alex-wang.jpg',
-            'bio': ''
+            'bio': '',
+            'twitter': ''
           }
         ],
         'format': 'Presentation'
@@ -54,23 +54,24 @@ angular.module('gmicnycApp')
             'company': 'MRY',
             'title': 'Chief Marketing Officer',
             'picture': '/images/speakers/david-berkowitz.jpg',
-            'bio': 'David Berkowitz is Chief Marketing Officer at agency MRY, a division of Publicis Groupe, where he directs the agency\'s communications and gains visibility for clients such as Visa, Johnson & Johnson, and Coca-Cola. Previously, he spent seven years at 360i, serving as Vice President of Emerging Media; he co-founded its social media practice and led its Startup Outlook initiative. David has contributed more than 500 columns to outlets such as Ad Age, MediaPost, and Mashable, and he has penned his blog MarketersStudio.com since 2005. He has spoken at more than 250 events globally, including a commencement address at his alma mater, Binghamton University.'
+            'bio': '<p>David Berkowitz is Chief Marketing Officer at agency MRY, a division of Publicis Groupe, where he directs the agency\'s communications and gains visibility for clients such as Visa, Johnson & Johnson, and Coca-Cola. Previously, he spent seven years at 360i, serving as Vice President of Emerging Media; he co-founded its social media practice and led its Startup Outlook initiative. David has contributed more than 500 columns to outlets such as Ad Age, MediaPost, and Mashable, and he has penned his blog MarketersStudio.com since 2005. He has spoken at more than 250 events globally, including a commencement address at his alma mater, Binghamton University.</p>',
+            'twitter': 'dberkowitz'
           },{
             'id': 6,
             'firstname': 'Teal',
             'lastname': 'Newland',
             'company': 'StumbleUpon',
             'title': 'VP of Marketing, Revenue, Partnerships',
-            'picture': '/images/speakers/teal-newland.jpg',
-            'bio': ''
+            'bio': '',
+            'twitter': 'tealn'
           },{
             'id': 4,
             'firstname': 'Jeff',
             'lastname': 'Arbour',
             'company': 'Plyfe',
             'title': 'Co-founder & CMO',
-            'picture': '/images/speakers/jeff-arbour.jpg',
-            'bio': ''
+            'bio': '<p>Jeff Arbour is the CMO and co-founder of Plyfe, with The Plyfe Platform anyone can create interactive cards in minutes [no coding].</p><p>Previous to Plyfe, Arbour was the Senior Vice President of North America at The Hyperfactory, where he was a key driver behind the company\'s growth in North America and defined domestic and global mobile strategies and executions for some of the world\'s most prestigious brands, leading to the eventual acquisition of The Hyperfactory by Meredith Corporation in 2010.</p><p>Arbour has been helping brands navigate the new media space since 2003. Jeff also sits on several advisory boards for digital companies, including Quixey and Cameo (acquired by Vimeo). Jeff is also a founding advisor for Palindrome Advisors, a not-for-profit organization.</p><p>Over the years, Jeff has worked with top clients such as Toyota, Ab InBev, BlackBerry, L’Oréal, Coca-Cola, Intel, Microsoft and Kraft, and has won numerous awards recognized by the Mobile Marketing Association, AdTech and the Webbys, among others.</p><p>In 2008, Jeff was named #1 in DM News’ Top 30 Under 30, Direct and Interactive Marketers Under 30, as well as one of the Top 100 Most Influential Marketers of 2008 and 2009 by Invesp Consulting, and continues to be a sought after guest speaker at various international conferences</p>',
+            'twitter': 'jeffarbour'
           }
         ],
         'format': 'Panel'
@@ -84,7 +85,7 @@ angular.module('gmicnycApp')
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'OmniChannel Approach: Contextualization, Creating Powerful Customer Experiences',
+        'title': 'OmniChannel Approach: Creating Powerful Customer Experiences',
         'startTime': '2015-06-11 11:00:00',
         'endTime': '2015-06-11 11:50:00',
         'description': '',
@@ -95,8 +96,8 @@ angular.module('gmicnycApp')
           'lastname': 'Galper',
           'company': 'EPAM',
           'title': 'Head of Mobile Competency Center',
-          'picture': '/images/speakers/yev-galper.jpg',
-          'bio': ''
+          'bio': '',
+          'twitter': ''
         },
         'speakers': [
           {
@@ -105,24 +106,24 @@ angular.module('gmicnycApp')
             'lastname': 'McKinley',
             'company': 'MobileRQ',
             'title': 'CEO',
-            'picture': '/images/speakers/tyler-mckinley.jpg',
-            'bio': ''
+            'bio': '',
+            'twitter': 'TylerMcKinley7'
           },{
             'id': 8,
             'firstname': 'Jill',
             'lastname': 'Wilson',
             'company': 'SGN',
             'title': 'SVP of Game Development',
-            'picture': '/images/speakers/jill-wilson.jpg',
-            'bio': ''
+            'bio': '<p>As SVP of Game Development, Jill (Schneiderman) Wilson oversees all aspects of SGN’s production, from concept through lifecycle. She is responsible for both the strategic planning and day-to-day operations of the company’s industry-leading cross-platform game development. As employee #3 (after founding partners), Jill spearheaded the company’s original expansion into game development and has grown their production team into the mobile-social leader it is today.</p><p>Prior to SGN, Jill held a hybrid of business and creative roles at start-up board game company, Imagination Games. During her tenure with Imagination, Jill pioneered the company’s international sales and outbound licensing business and created several board games, including the Gossip Girl: Never Have I Ever game.</p><p>Jill serves as an advisor to the Casual Games Association and is a regular speaker at industry events. In her spare time, she plays competitive backgammon in the Bay Area, where she currently resides. Jill graduated Magna Cum Laude from the University of Southern California, and was born and raised in New York City.</p>',
+            'twitter': ''
           },{
             'id': 13,
             'firstname': 'Nick',
             'lastname': 'Rockwell',
             'company': 'Condé Nast',
             'title': 'CTO',
-            'picture': '/images/speakers/nick-rockwell.jpg',
-            'bio': ''
+            'bio': '',
+            'twitter': ''
           }
         ],
         'format': 'Panel'
@@ -165,8 +166,8 @@ angular.module('gmicnycApp')
           'lastname': 'Herman',
           'company': 'ChatID',
           'title': 'Founder & CEO',
-          'picture': '/images/speakers/dan-herman.jpg',
-          'bio': ''
+          'bio': '',
+          'twitter': 'dan_herman'
         },
         'speakers': [
           {
@@ -176,15 +177,16 @@ angular.module('gmicnycApp')
             'company': 'Lamour Group',
             'title': 'SVP Emerging Brands, Licensing & Digital',
             'picture': '/images/speakers/ryan-craver.jpg',
-            'bio': 'Ryan\'s natural fascination with the intersection of retail and technology has led to a career of inspiring and leading retailers to be on the forefront of the evolving "connected retail" environment. Ryan enjoys tackling changing consumer dynamics and defining how retail organizations and brands can leverage technology to strengthen their competitive position. Ryan currently leads Emerging Brands, Licensing and Digital Strategy for Lamour Group\'s portfolio of global brands while advising several startups focused on Mobile and AdTech. Prior to joining Lamour, Ryan was in charge of the core department store strategy at Lord & Taylor / Hudson\'s Bay Company and was a senior leader at Accenture, driving growth and profit improvement across multiple clients, including Virgin Media, FedEx and Best Buy.'
+            'bio': 'Ryan\'s natural fascination with the intersection of retail and technology has led to a career of inspiring and leading retailers to be on the forefront of the evolving "connected retail" environment. Ryan enjoys tackling changing consumer dynamics and defining how retail organizations and brands can leverage technology to strengthen their competitive position. Ryan currently leads Emerging Brands, Licensing and Digital Strategy for Lamour Group\'s portfolio of global brands while advising several startups focused on Mobile and AdTech. Prior to joining Lamour, Ryan was in charge of the core department store strategy at Lord & Taylor / Hudson\'s Bay Company and was a senior leader at Accenture, driving growth and profit improvement across multiple clients, including Virgin Media, FedEx and Best Buy.',
+            'twitter': 'ryanmcraver'
           },{
             'id': 10,
             'firstname': 'Wesley',
             'lastname': 'Barrow',
             'company': 'Nomi',
             'title': 'Founder',
-            'picture': '/images/speakers/wesley-barrow.jpg',
-            'bio': ''
+            'bio': '',
+            'twitter': 'wesleybarrow'
           }
         ],
         'format': 'Panel'
@@ -197,13 +199,13 @@ angular.module('gmicnycApp')
         'moderator': '',
         'speakers': [
           {
-            'id': 16,
-            'firstname': 'Brent',
-            'lastname': 'Hieggelke',
+            'id': 19,
+            'firstname': 'Alyssa',
+            'lastname': 'Meritt',
             'company': 'Urban Airship',
-            'title': 'Chief Mobile Evangelist',
-            'picture': '/images/speakers/generic-male.png',
-            'bio': ''
+            'title': 'Head of Strategic Consulting',
+            'bio': '<p>As Head of Strategic Consulting at Urban Airship, Alyssa leads a team of consultants that deliver tailored, digital marketing strategies to enterprise clients in order to increase mobile app engagement and grow business ROI. Strategy sessions use research, trends and data on markets, consumers and culture, to define app and messaging strategies and KPIs, and ultimately inspire clients to incorporate a profitable relationship-based mobile strategy into their core marketing mix.</p><p>Alyssa’s client experience spans a diverse set of vertical industries, including brands such as The Times, Starwood, CBS, the NBA, NASCAR, Virgin Atlantic, Bank of America, BCBS, Dunkin’ Donuts, PayPal, Caesar’s Entertainment, Abercrombie + Fitch, Neiman Marcus, Novartis, Biogen, and Comcast. Prior to Urban Airship, Alyssa was Vice President Marketing at DigitasLBi She has over 15 years experience in creating innovative mobile and web-based applications and user-centric digital experiences from roles at various advertising and digital media companies on the agency-side, client-side and as an entrepreneur.</p>',
+            'twitter': ''
           }
         ],
         'format': 'Presentation'
@@ -230,24 +232,24 @@ angular.module('gmicnycApp')
             'lastname': 'Matzner',
             'company': 'Fueled',
             'title': 'Director & Chief Strategist',
-            'picture': '/images/speakers/ryan-matzner.jpg',
-            'bio': 'Ryan Matzner is the Director of Strategy at Fueled, a mobile design and development shop based in NYC and London. He has a decade of online and mobile marketing experience, working with clients such as American Express, Condé Nast, Ideeli, Thrillist, HBO, QuizUp, Barneys, and Gilt Groupe. He can be found on Facebook, Twitter, LinkedIn and Google+.'
+            'bio': 'Ryan Matzner is the Director of Strategy at Fueled, a mobile design and development shop based in NYC and London. He has a decade of online and mobile marketing experience, working with clients such as American Express, Condé Nast, Ideeli, Thrillist, HBO, QuizUp, Barneys, and Gilt Groupe. He can be found on Facebook, Twitter, LinkedIn and Google+.',
+            'twitter': 'rdm'
           },{
             'id': 15,
             'firstname': 'Mark',
             'lastname': 'Egerman',
             'company': 'Cover',
             'title': 'Co-founder',
-            'picture': '/images/speakers/generic-male.png',
-            'bio': ''
+            'bio': '',
+            'twitter': 'megerman'
           },{
             'id': 7,
             'firstname': 'Steve',
             'lastname': 'Callanan',
             'company': 'Wirewax',
             'title': 'Co-founder & CEO',
-            'picture': '/images/speakers/steve-callanan.jpg',
-            'bio': 'Steve, an Electronic Engineering major, established his first production company in 2001 producing movie trailers, motion graphics, music videos and commercials; and was also producing over 400 hours of branded, short-form fashion and beauty content for the four biggest lifestyle publishers. He proposed that online video content should be as \'connected\' as the rest of the web; linking pixels to people, products and information was the goal. He engineered the world\'s first shoppable video player which lead to the most powerful interactive video platform to help hundreds of global brands realize their video potential.'
+            'bio': '<p>Steve, an Electronic Engineering major, established his first production company in 2001 producing movie trailers, motion graphics, music videos and commercials; and was also producing over 400 hours of branded, short-form fashion and beauty content for the four biggest lifestyle publishers. He proposed that online video content should be as \'connected\' as the rest of the web; linking pixels to people, products and information was the goal. He engineered the world\'s first shoppable video player which lead to the most powerful interactive video platform to help hundreds of global brands realize their video potential.</p>',
+            'twitter': 'steviewax'
           }
         ],
         'format': 'Panel'
