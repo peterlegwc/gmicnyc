@@ -8,7 +8,8 @@
  * Controller of the gmicnycApp
  */
 angular.module('gmicnycApp')
-  .controller('AgendaCtrl', function ($scope) {
+  .controller('AgendaCtrl', function ($scope,topicsFactory) {
+    $scope.topics = topicsFactory.getAll();
     $scope.agenda = [
       {
         'title': 'Opening',
@@ -20,11 +21,11 @@ angular.module('gmicnycApp')
         'speakers': '',
         'format': 'Event'
       }, {
-        'title': 'Create a Mobile Experience That Keeps Your Customers Coming Back',
+        'title': 'OmniChannel Approach: Create a Mobile Experience That Keeps Your Customers Coming Back',
         'startTime': '2015-06-11 09:35:00',
         'endTime': '2015-06-11 09:55:00',
         'description': '',
-        'topic': '',
+        'topic': 'omnichannel',
         'moderator': '',
         'speakers': [
           {
@@ -39,10 +40,11 @@ angular.module('gmicnycApp')
         ],
         'format': 'Presentation'
       }, {
-        'title': 'Brands and Customer Engagement',
+        'title': 'Using Mobile to Deepen Customer Engagement',
         'startTime': '2015-06-11 10:00:00',
         'endTime': '2015-06-11 10:50:00',
         'description': '',
+        'topic': 'engagement',
         'moderator': '',
         'speakers': [
           {
@@ -76,17 +78,17 @@ angular.module('gmicnycApp')
         'title': 'Coffee Break',
         'startTime': '2015-06-11 10:50:00',
         'endTime': '2015-06-11 11:00:00',
-        'description': '10 minute coffee break',
-        'topic': 'Break',
+        'description': '',
+        'topic': '',
         'moderator': '',
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'Contextualization: Creating Powerful OmniChannel Customer Experiences',
+        'title': 'OmniChannel Approach: Contextualization, Creating Powerful Customer Experiences',
         'startTime': '2015-06-11 11:00:00',
         'endTime': '2015-06-11 11:50:00',
         'description': '',
-        'topic': 'Contextualization, Omni-channel, User Experience, Personlization, Multi-channel',
+        'topic': 'omnichannel',
         'moderator': {
           'id': 12,
           'firstname': 'Yev',
@@ -129,7 +131,7 @@ angular.module('gmicnycApp')
         'startTime': '2015-06-11 11:50:00',
         'endTime': '2015-06-11 12:30:00',
         'description': '',
-        'topic': '',
+        'topic': 'wallet',
         'moderator': '',
         'speakers': '',
         'format': 'Presentation'
@@ -137,17 +139,17 @@ angular.module('gmicnycApp')
         'title': 'Lunch',
         'startTime': '2015-06-11 12:30:00',
         'endTime': '2015-06-11 13:15:00',
-        'description': 'Lunch Break',
-        'topic': 'Break',
+        'description': '',
+        'topic': '',
         'moderator': '',
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'Gamifying the Customer Experience',
+        'title': 'Millennials: Maximizing Gamification',
         'startTime': '2015-06-11 13:15:00',
         'endTime': '2015-06-11 13:45:00',
         'description': '',
-        'topic': '',
+        'topic': 'millennials',
         'moderator': '',
         'speakers': '',
         'format': 'Presentation'
@@ -156,7 +158,7 @@ angular.module('gmicnycApp')
         'startTime': '2015-06-11 13:50:00',
         'endTime': '2015-06-11 14:40:00',
         'description': '',
-        'topic': 'Beacons, Real Time Retail',
+        'topic': 'beacons',
         'moderator': {
           'id': 9,
           'firstname': 'Dan',
@@ -187,11 +189,11 @@ angular.module('gmicnycApp')
         ],
         'format': 'Panel'
       }, {
-        'title': 'Digital Media Consumption in 2015',
+        'title': 'Millennials: Digital Media Consumption in 2015',
         'startTime': '2015-06-11 14:45:00',
         'endTime': '2015-06-11 15:20:00',
         'description': '',
-        'topic': '',
+        'topic': 'millennials',
         'moderator': '',
         'speakers': [
           {
@@ -209,16 +211,17 @@ angular.module('gmicnycApp')
         'title': 'Coffee Break',
         'startTime': '2015-06-11 15:20:00',
         'endTime': '2015-06-11 15:30:00',
-        'description': '10 minute coffee break',
-        'topic': 'Break',
+        'description': '',
+        'topic': '',
         'moderator': '',
         'speakers': '',
         'format': 'Break'
       }, {
-        'title': 'Marketing to Millennials: The Holy Grail',
+        'title': 'Millennials: Make it Personal and Customized',
         'startTime': '2015-06-11 15:30:00',
         'endTime': '2015-06-11 16:20:00',
         'description': '',
+        'topic': 'millennials',
         'moderator': '',
         'speakers': [
           {
@@ -249,11 +252,11 @@ angular.module('gmicnycApp')
         ],
         'format': 'Panel'
       }, {
-        'title': 'Sand Hill Road to Wall Street: VC Perspectives',
+        'title': 'VC Perspectives: Monetizing your Customer\'s Mobile Experience',
         'startTime': '2015-06-11 16:25:00',
         'endTime': '2015-06-11 17:15:00',
         'description': '',
-        'topic': 'VCs Perspectives on What Makes a Company Great',
+        'topic': 'vcs',
         'moderator': '',
         'speakers': '',
         'format': 'Panel'

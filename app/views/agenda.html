@@ -5,27 +5,36 @@
     <div class="sessions">
       <div class="row" ng-repeat="session in agenda | orderBy: orderByDate">
         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 session" ng-class="{last:$last}">
-          <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey">
+          <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey" ng-click="toggleDesc()">
             <div ng-bind="parseDate(session.startTime) | date:'shortTime'"></div>
             <div ng-bind="parseDate(session.endTime) | date:'shortTime'"></div>
+            <span class="fa-stack fa-2x" aria-hidden="true" ng-if="topics[session.topic].icon">
+              <i class="fa fa-circle fa-stack-2x color-primary" aria-hidden="true"></i>
+              <i class="fa fa-{{ topics[session.topic].icon }} fa-stack-1x color-white" aria-hidden="true"></i>
+            </span>
           </div>
           <div class="col-xs-9 col-sm-8 col-md-9 info" ng-click="toggleDesc()">
             <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.format=='Break'}" ng-bind="session.title"></h4>
             <div class="ng-slideInOut" ng-show="session.show">
-              <div ng-bind="session.description"></div>
+              <div class="text-small" ng-if="session.description || session.topic">
+                <span class="color-primary">Topic</span>:
+                <div ng-if="session.description">{{ session.description }}</div>
+                <div ng-if="!session.description">{{ topics[session.topic].desc }}</div>
+              </div>
             </div>
             <div ng-if="session.moderator" class="text-small">
               <span class="color-primary">Moderator</span>:
               <div>{{ session.moderator.firstname }} {{ session.moderator.lastname }}, {{ session.moderator.title }}, <strong>{{ session.moderator.company }}</strong></div>
             </div>
             <div ng-if="session.speakers" class="text-small">
-              <span class="color-primary">Speakers</span>:
+              <span class="color-primary" ng-if="session.speakers.length > 1">Speakers</span>
+              <span class="color-primary" ng-if="session.speakers.length == 1">Speaker</span>:
               <ul class="list-unstyled">
                 <li ng-repeat="speaker in session.speakers">{{ speaker.firstname }} {{ speaker.lastname }}, {{ speaker.title }}, <strong>{{ speaker.company }}</strong></li>
               </ul>
             </div>
           </div>
-          <div class="hidden-xs col-sm-2 col-md-1 format">
+          <div class="hidden-xs col-sm-2 col-md-1 format" ng-click="toggleDesc()">
             <div class="color-spacegrey" ng-bind="session.format"></div>
           </div>
         </div>

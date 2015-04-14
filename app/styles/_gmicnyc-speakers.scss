@@ -30,6 +30,7 @@
     }
     img {
       position: relative;
+      width: 100%;
       @extend .transition-fast;
     }
     &:hover img {

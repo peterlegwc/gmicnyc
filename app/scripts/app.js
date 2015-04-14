@@ -33,7 +33,8 @@ angular
       })
       .when('/topics', {
         title: 'Topics',
-        templateUrl: 'views/topics.html'
+        templateUrl: 'views/topics.html',
+        controller: 'TopicsCtrl'
       })
       .when('/agenda', {
         title: 'Agenda',
