@@ -47,6 +47,10 @@ angular
         title: 'G-Startup Competition',
         templateUrl: 'views/gstartup.html'
       })
+      .when('/newsletter', {
+        title: 'Newsletter',
+        templateUrl: 'views/newsletter.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
