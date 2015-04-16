@@ -109,14 +109,6 @@ angular.module('gmicnycApp')
         'bio': '',
         'twitter': ''
       },{
-        'id': 13,
-        'firstname': 'Nick',
-        'lastname': 'Rockwell',
-        'company': 'Condé Nast',
-        'title': 'CTO',
-        'bio': '',
-        'twitter': ''
-      },{
         'id': 14,
         'firstname': 'Alex',
         'lastname': 'Wang',

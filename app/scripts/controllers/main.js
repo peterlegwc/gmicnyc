@@ -8,7 +8,7 @@
  * Controller of the gmicnyc
  */
 angular.module('gmicnycApp')
-  .controller('MainCtrl', ['$scope', 'leafletData', function ($scope, leafletData) {
+  .controller('MainCtrl', ['$scope', 'leafletData', 'topicsFactory', function ($scope, leafletData, topicsFactory) {
     angular.extend($scope, {
         desktopCenter: {
           lat: 40.7530026,
@@ -95,6 +95,8 @@ angular.module('gmicnycApp')
         url: '//taipei.thegmic.com/'
       },
     ];
+
+    $scope.topics = topicsFactory.getAllArr();
 
     // TODO: Move leaflet conditional logic into a directive
     // offsets map on larger screens to show more of new york

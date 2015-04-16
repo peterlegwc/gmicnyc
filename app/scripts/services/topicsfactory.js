@@ -48,10 +48,17 @@ angular.module('gmicnycApp')
       }
     };
 
-    // Public API here
-    return {
-      getAll: function () {
-        return topics;
-      }
+    var factory = {};
+    factory.getAll = function() {
+      return topics;
     };
+    factory.getAllArr = function() {
+      var arr = [];
+      angular.forEach(topics, function (val, key) {
+        arr.push(val);
+      });
+      return arr;
+    };
+    return factory;
+
   });

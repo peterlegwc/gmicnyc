@@ -116,14 +116,6 @@ angular.module('gmicnycApp')
             'title': 'SVP of Game Development',
             'bio': '<p>As SVP of Game Development, Jill (Schneiderman) Wilson oversees all aspects of SGN’s production, from concept through lifecycle. She is responsible for both the strategic planning and day-to-day operations of the company’s industry-leading cross-platform game development. As employee #3 (after founding partners), Jill spearheaded the company’s original expansion into game development and has grown their production team into the mobile-social leader it is today.</p><p>Prior to SGN, Jill held a hybrid of business and creative roles at start-up board game company, Imagination Games. During her tenure with Imagination, Jill pioneered the company’s international sales and outbound licensing business and created several board games, including the Gossip Girl: Never Have I Ever game.</p><p>Jill serves as an advisor to the Casual Games Association and is a regular speaker at industry events. In her spare time, she plays competitive backgammon in the Bay Area, where she currently resides. Jill graduated Magna Cum Laude from the University of Southern California, and was born and raised in New York City.</p>',
             'twitter': ''
-          },{
-            'id': 13,
-            'firstname': 'Nick',
-            'lastname': 'Rockwell',
-            'company': 'Condé Nast',
-            'title': 'CTO',
-            'bio': '',
-            'twitter': ''
           }
         ],
         'format': 'Panel'
