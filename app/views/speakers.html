@@ -1,16 +1,16 @@
 <section id="speakers">
   <div class="container">
     <div class="row">
-      <h3 class="color-primary text-center">Speakers</h3>
+      <h3 class="color-primary text-center text-thin">Speakers</h3>
       <ul class="list-unstyled speakers-grid">
-        <li class="col-xs-6 col-sm-3" ng-repeat="speaker in speakers | orderBy: 'lastname'">
+        <li class="col-xs-6 col-sm-3" ng-repeat="speaker in speakers | orderBy: 'lastName'">
           <a role="button" ng-click="setDialog()">
             <div class="box shadow-accent">
-              <img ng-src="/images/speakers/{{ speaker.firstname.toLowerCase() }}-{{ speaker.lastname.toLowerCase() }}.jpg" alt="{{ speaker.firstname }} {{ speaker.lastname }}" class="img-responsive">
+              <img ng-src="/images/speakers/{{ speaker.firstName.toLowerCase() }}-{{ speaker.lastName.toLowerCase() }}.jpg" alt="{{ speaker.firstName }} {{ speaker.lastName }}" class="img-responsive">
               <div class="caption">
-                <h5>{{ speaker.firstname }} {{ speaker.lastname }}</h5>
+                <h5>{{ speaker.firstName }} {{ speaker.lastName }}</h5>
                 <div class="details">
-                  {{ speaker.title }}, {{ speaker.company }}
+                  {{ speaker.jobTitle }}, {{ speaker.company }}
                 </div>
               </div>
             </div>

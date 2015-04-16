@@ -12,9 +12,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h2 class="color-primary">Mobile: All About the Customer Experience</h2>
+        <h2 class="color-primary text-thin">Mobile: All About the Customer Experience</h2>
         <p>The world’s most influential conference on mobile comes to New York City on June 11th.  From Beijing to San Francisco and Tokyo to Bangalore, GMIC is the where the mobile community gathers to learn about the latest innovations and connect with industry thought leaders.</p>
-        <p>Creating a deeper engagement with your customers via mobile is key. GMIC NYC will address the unique challenges and opportunities that brands using mobile experience everyday. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on how to optimize the mobile customer experience.</p>
+        <p>Creating a deeper engagement with your customers via mobile is key. GMIC New York will address the unique challenges and opportunities that brands using mobile experience everyday. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on how to optimize the mobile customer experience.</p>
       </div>
       <div class="col-md-4">
         <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" target="_blank" class="callout-box">
@@ -55,30 +55,31 @@
 <section class="bg-lightgrey">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-4">
         <img src="images/photo_crowd.jpg" alt="GMIC Crowd" class="img-responsive shadow-accent">
         <h4 class="color-spacegrey">Who Should Attend</h4>
         <p>Digital Strategists, Marketers, CX Directors, Brand Managers, Advertising Executives, Agencies, Merchandisers and technology professionals who are leading their organizations' mobile strategy</p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-4">
         <img src="images/photo_speaking.jpg" alt="GMIC Speaking" class="img-responsive shadow-accent">
         <h4 class="color-spacegrey">Why Attend</h4>
-        <p>You’ll learn how to realign your mobile strategy to capitalize on customer engagement and leapfrog the competition!</p>
+        <p>You'll learn how to harness the power of mobile to strengthen brand loyalty, increase customer engagement and deliver personalized customer experiences.</p>
       </div>
-      <div class="col-sm-12 col-md-4">
-        <h4 class="color-spacegrey">Topics Include</h4>
-        <ul class="text-small">
-          <li>Using Mobile to Deepen Customer Engagement</li>
-          <li>Transform the Customer Journey with an Omnichannel Approach</li>
-          <li>Sand Hill Road to Wall Street: VC Perspectives</li>
-          <li>Making Beacons Work for you</li>
-          <li>Mobile Wallet: It's Not Just About Payments</li>
-          <li>Millennials: Participating in the Brand Experience</li>
-        </ul>
-        <p class="text-center">
-          <a href="/topics" class="btn btn-primary btn-sm outline" role="button">Learn More</a>
-        </p>
+      <div class="col-sm-4">
+        <img src="images/photo_stage.jpg" alt="GMIC Stage" class="img-responsive shadow-accent">
+        <h4 class="color-spacegrey">Speakers</h4>
+        <p>GMIC New York speakers are market-disrupting leaders who’ve had remarkable success capitalizing on mobile.</p>
       </div>
+    </div>
+  </div>
+</section>
+<section id="topics">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="text-center text-thin color-spacegrey">In New York We'll Discuss...</h3>
+      </div>
+      <topic-highlight></topic-highlight>
     </div>
   </div>
 </section>
@@ -92,7 +93,7 @@
 <section id="gmics" class="gmics text-center">
   <div class="container">
     <div class="row">
-      <h3 class="color-spacegrey text-center">GMIC Locations</h3>
+      <h3 class="color-spacegrey text-center text-thin">GMIC Locations</h3>
       <div class="col-sm-3" ng-repeat="event in gmics">
         <div ng-if="event.url">
           <a href="{{ event.url }}"><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>

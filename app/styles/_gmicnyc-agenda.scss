@@ -1,5 +1,8 @@
 .sessions {
   .session {
+    .title {
+      margin-bottom: 11px;
+    }
     .time, .format, .topic {
       @media (max-width: $screen-xs-max) {
         font-size: 0.7em;

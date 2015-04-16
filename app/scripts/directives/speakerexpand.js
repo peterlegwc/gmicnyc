@@ -19,14 +19,14 @@ angular.module('gmicnycApp')
             angular.element('.fs-dialog').removeClass('fs-dialog-open fs-dialog-close'); // ensure classes are removed
             var speaker;
             scope.speakers.forEach(function(el) {
-              if (el.id === newVal) {
+              if (el.speakerId === newVal) {
                 speaker = el;
               }
             });
-            scope.firstname = speaker.firstname;
-            scope.lastname = speaker.lastname;
+            scope.firstName = speaker.firstName;
+            scope.lastName = speaker.lastName;
             scope.bio = speaker.bio;
-            scope.title = speaker.title;
+            scope.jobTitle = speaker.jobTitle;
             scope.company = speaker.company;
             scope.twitter = speaker.twitter;
 

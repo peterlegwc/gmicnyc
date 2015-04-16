@@ -98,6 +98,10 @@ angular.module('gmicnycApp')
 
     $scope.topics = topicsFactory.getAllArr();
 
+    $scope.hoverTopic = function() {
+      $scope.currentTopic = this.topic;
+    };
+
     // TODO: Move leaflet conditional logic into a directive
     // offsets map on larger screens to show more of new york
     if (angular.element(window).width() > 768) {

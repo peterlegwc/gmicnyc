@@ -1,6 +1,6 @@
 <section id="agenda">
   <div class="container">
-    <h3 class="color-primary text-center">Agenda</h3>
+    <h3 class="color-primary text-center text-thin">Agenda</h3>
     <div class="text-small text-center">Thursday, June 11, 2015</div>
     <div class="sessions">
       <div class="row" ng-repeat="session in agenda | orderBy: orderByDate">
@@ -22,15 +22,18 @@
                 <div ng-if="!session.description">{{ topics[session.topic].desc }}</div>
               </div>
             </div>
-            <div ng-if="session.moderator" class="text-small">
-              <span class="color-primary">Moderator</span>:
-              <div>{{ session.moderator.firstname }} {{ session.moderator.lastname }}, {{ session.moderator.title }}, <strong>{{ session.moderator.company }}</strong></div>
+            <div ng-if="session.moderators" class="text-small">
+              <span class="color-primary" ng-if="session.moderators.length > 1">Moderators</span>
+              <span class="color-primary" ng-if="session.moderators.length == 1">Moderator</span>:
+              <ul class="list-unstyled">
+                <li ng-repeat="moderator in session.moderators | orderBy: 'lastName'">{{ moderator.firstName }} {{ moderator.lastName }}, {{ moderator.jobTitle }}, <strong>{{ moderator.company }}</strong></li>
+              </ul>
             </div>
             <div ng-if="session.speakers" class="text-small">
               <span class="color-primary" ng-if="session.speakers.length > 1">Speakers</span>
               <span class="color-primary" ng-if="session.speakers.length == 1">Speaker</span>:
               <ul class="list-unstyled">
-                <li ng-repeat="speaker in session.speakers">{{ speaker.firstname }} {{ speaker.lastname }}, {{ speaker.title }}, <strong>{{ speaker.company }}</strong></li>
+                <li ng-repeat="speaker in session.speakers | orderBy: 'lastName'">{{ speaker.firstName }} {{ speaker.lastName }}, {{ speaker.jobTitle }}, <strong>{{ speaker.company }}</strong></li>
               </ul>
             </div>
           </div>
