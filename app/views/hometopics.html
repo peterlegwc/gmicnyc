@@ -2,6 +2,7 @@
   <ul class="color-primary">
     <li ng-repeat="topic in topics" ng-mouseover="hoverTopic()" ng-click="hoverTopic()" class="topic topic-{{ topic.topicId }}">
       <h4 class="text-thin color-default" ng-bind="topic.title" ng-class="{'color-primary': $first}"></h4>
+      <div ng-if="this.topic == currentTopic" class="color-spacegrey visible-xs-block">{{ topic.desc }}</div>
     </li>
   </ul>
   <p class="text-center">
