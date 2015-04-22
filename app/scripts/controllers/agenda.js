@@ -136,21 +136,39 @@ angular.module('gmicnycApp')
             'jobTitle': 'SVP of Game Development',
             'bio': '<p>As SVP of Game Development, Jill (Schneiderman) Wilson oversees all aspects of SGN’s production, from concept through lifecycle. She is responsible for both the strategic planning and day-to-day operations of the company’s industry-leading cross-platform game development. As employee #3 (after founding partners), Jill spearheaded the company’s original expansion into game development and has grown their production team into the mobile-social leader it is today.</p><p>Prior to SGN, Jill held a hybrid of business and creative roles at start-up board game company, Imagination Games. During her tenure with Imagination, Jill pioneered the company’s international sales and outbound licensing business and created several board games, including the Gossip Girl: Never Have I Ever game.</p><p>Jill serves as an advisor to the Casual Games Association and is a regular speaker at industry events. In her spare time, she plays competitive backgammon in the Bay Area, where she currently resides. Jill graduated Magna Cum Laude from the University of Southern California, and was born and raised in New York City.</p>',
             'twitter': ''
+          },{
+            'speakerId': 25,
+            'firstName': 'Xander',
+            'lastName': 'Kotsatos',
+            'company': 'Rocket Fuel',
+            'jobTitle': 'Mobile Strategy Lead, East',
+            'bio': '<p>A 6-year AdTech veteran, Xander has managed strategy across mobile, display, video, social and affiliate programs for some of the largest Fortune 500 companies in the U.S. His dedication to building campaigns that drive performance is surpassed only by his passion for the mobile space and its ability to create true impact for brands in a multi-screen world.</p><p>In his current position as the East Coast Mobile Strategy Lead for Rocket Fuel, Xander works with a world-class team to leverage artificial intelligence and big data to make mobile a measurable and results-driven marketing channel across a clients\' owned and paid media. Prior to his current role, Xander worked in agency sales, strategy and client services in the Detroit, Atlanta, DC, New York and Boston markets for both Rocket Fuel and ValueClick Media (now Conversant div. of Alliance Data) where he developed strong partner relationships to build breakthrough digital advertising programs across almost every major vertical.</p><p>A graduate of Colby College, Xander lives in New York with his wife. When not skiing or playing music, Xander is an avid Fantasy Football Player.</p>',
+            'twitter': ''
           }
         ],
         'format': 'Panel'
       }, {
         'title': 'Mobile Wallet:  It\'s not just about Payments',
-        'startTime': '2015-06-11 11:50:00',
-        'endTime': '2015-06-11 12:30:00',
+        'startTime': '2015-06-11 11:55:00',
+        'endTime': '2015-06-11 12:15:00',
         'description': '',
         'topic': 'wallet',
         'moderators': '',
-        'speakers': '',
+        'speakers': [
+          {
+            'speakerId': 24,
+            'firstName': 'Mike',
+            'lastName': 'Dudas',
+            'company': 'Button',
+            'jobTitle': 'Co-Founder & Chief Revenue Officer',
+            'bio': '',
+            'twitter': ''
+          }
+        ],
         'format': 'Presentation'
       }, {
         'title': 'Lunch',
-        'startTime': '2015-06-11 12:30:00',
+        'startTime': '2015-06-11 12:15:00',
         'endTime': '2015-06-11 13:15:00',
         'description': '',
         'topic': '',
@@ -205,7 +223,7 @@ angular.module('gmicnycApp')
         ],
         'format': 'Panel'
       }, {
-        'title': 'Millennials: Digital Media Consumption in 2015',
+        'title': 'Mastering Mobile Engagement as a Media Company',
         'startTime': '2015-06-11 14:45:00',
         'endTime': '2015-06-11 15:20:00',
         'description': '',
@@ -228,6 +246,14 @@ angular.module('gmicnycApp')
             'jobTitle': 'Director of Product Development',
             'bio': '',
             'twitter': 'mattrestivo'
+          },{
+            'speakerId': 23,
+            'firstName': 'Julia',
+            'lastName': 'Beizer',
+            'company': 'The Washington Post',
+            'jobTitle': 'Mobile Projects Editor',
+            'bio': '',
+            'twitter': ''
           }
         ],
         'format': 'Presentation'
@@ -290,6 +316,14 @@ angular.module('gmicnycApp')
             'company': 'Mayfield',
             'jobTitle': 'Managing Director',
             'bio': '<p>"I’ve learned a lot about teamwork from the three bands I perform with. Each member should possess a unique voice and super-power, but only when the collective is comprised of complementary talents does real magic occur. The same dynamic applies for building startups and venture investing."</p><p>I\'m currently championing:</p><ul><li>3D Robotics: The world pioneer in unmanned aerial vehicle (UAV) drone platforms</li><li>fitmob: Re-inventing the gym through local social group workouts</li><li>HealthTap: Mobile-first doctor-patient community and on-demand health services</li><li>Lantern: Online programs and coaching that strengthen your emotional well-being</li><li>Massdrop: Massdrop is building an online community for enthusiasts.</li><li>Moat: Brand analytics and intelligence SaaS platform</li><li>OUYA: Android-powered video game microconsole and community</li><li>Syntertainment: Stealth company from the creator of SimCity, the Sims and Spore</li><li>Zirtual: Virtual assistant services marketplace</li></ul><p>Some of my notable successes:</p><ul><li>AdChina: Acquired by Alibaba</li><li>Basis: The industry’s most advanced wearable health tracker (acquired by Intel in 2014)</li><li>Iridigm: Revolutionary MEMS-based reflective displays (acquired by Qualcomm)</li><li>ngMoco: Early leader in mobile social gaming (acquired by DeNA)</li><li>Playdom: One of the first three big social game publishers (acquired by Disney)</li></ul><p>Tim’s pre-Mayfield investments include:</p><ul><li>Lumosity: Leader in brain training and mental fitness</li><li>PCH International: Virtualized design, manufacturing, and logistics services for next-generation connected devices</li></ul><p>Awards & recognition:</p><ul><li>One of “Top 100 Tech Investors” on Forbes Midas list in 2011 & 2012</li><li>One of “12 Most Influential Tech Investors” by CNET</li><li>Always On Digital Media & Mobile Power Player</li><li>Gamification Summit award for Special Achievement in the Industry</li></ul>',
+            'twitter': ''
+          },{
+            'speakerId': 26,
+            'firstName': 'Nihal',
+            'lastName': 'Mehta',
+            'company': 'Eniac',
+            'jobTitle': 'Founding General Partner',
+            'bio': '<p>Nihal Mehta is a Founding General Partner at Eniac Ventures. With over 15 years experience in marketing technologies through founding five startups and investing in 100+ since 1999, Nihal Mehta is a noted expert in the emerging adoption of mobile technologies for media properties and consumer brands.</p><p>Nihal founded M1 "Mobile-First" Summit in 2014, bringing together thousands of mobile innovators with two events/year in NYC and San Francisco. Prior to Eniac, Nihal co-founded LocalResponse, Inc. (now Qualia Media), which makes ads more relevant from social signals, which he pivoted from buzzd, the first mobile real-time city guide. As the founding CEO, Nihal grew LocalResponse\'s revenues 2153% over a three year period, which placed the company to #204 (#14 in NYC) to the 2014 Inc. 5000\'s Fastest Growing Companies and #67 to the 2013 Forbes list of America\'s Most Promising Companies. Prior to LocalResponse, Nihal founded ipsh!, one of the first full-service mobile marketing agencies in 2001, which was acquired by Omnicom (NYSE: OMC) in 2005. Nihal\'s investment portfolio includes Admob (sold to Google), Airbnb, HotelTonight, Swiftkey, Tapad & Uber.</p><p>In 2014, Nihal was named to AlleyWatch\'s "100 NYC Tech Influencers You Need to Know," in 2013, a semi-finalist for "Entrepreneur of the Year" by Ernst & Young, in 2012 a top 100 "Coolest People in NY Tech,"" by Business Insider, a "NYC tech influencer" by VentureBeat, one of the "25 People Every New Founder Should Meet in New York Tech" a top "25 Up-And-Coming Startup CEO in New York" by Business Insider, and a 2012 AlwaysOn "Power Player NYC."" Mehta was named a top 10 New York City "Game Changer" in the 2010 New York Enterprise Report, one of twenty RCR Wireless News "Mobile Movers and Shakers" in 2008, a BusinessWeek "M-Commerce Baron" in 2006 and named one of Ad Age\'s "Top 20 Marketers in Their 20s" in 2005. Nihal frequently guest lectures at business schools around the country on entrepreneurship and mobile marketing, and is published in over 15 books and white papers on the subject.</p><p>Nihal graduated from the University of Pennsylvania with a BA in Philosophy and a BSE in Computer Science.</p>',
             'twitter': ''
           }
         ],

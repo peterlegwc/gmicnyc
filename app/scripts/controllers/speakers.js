@@ -164,6 +164,38 @@ angular.module('gmicnycApp')
         'jobTitle': 'Finance Correspondent',
         'bio': '',
         'twitter': ''
+      },{
+        'speakerId': 23,
+        'firstName': 'Julia',
+        'lastName': 'Beizer',
+        'company': 'The Washington Post',
+        'jobTitle': 'Mobile Projects Editor',
+        'bio': '',
+        'twitter': ''
+      },{
+        'speakerId': 24,
+        'firstName': 'Mike',
+        'lastName': 'Dudas',
+        'company': 'Button',
+        'jobTitle': 'Co-Founder & Chief Revenue Officer',
+        'bio': '',
+        'twitter': ''
+      },{
+        'speakerId': 25,
+        'firstName': 'Xander',
+        'lastName': 'Kotsatos',
+        'company': 'Rocket Fuel',
+        'jobTitle': 'Mobile Strategy Lead, East',
+        'bio': '<p>A 6-year AdTech veteran, Xander has managed strategy across mobile, display, video, social and affiliate programs for some of the largest Fortune 500 companies in the U.S. His dedication to building campaigns that drive performance is surpassed only by his passion for the mobile space and its ability to create true impact for brands in a multi-screen world.</p><p>In his current position as the East Coast Mobile Strategy Lead for Rocket Fuel, Xander works with a world-class team to leverage artificial intelligence and big data to make mobile a measurable and results-driven marketing channel across a clients\' owned and paid media. Prior to his current role, Xander worked in agency sales, strategy and client services in the Detroit, Atlanta, DC, New York and Boston markets for both Rocket Fuel and ValueClick Media (now Conversant div. of Alliance Data) where he developed strong partner relationships to build breakthrough digital advertising programs across almost every major vertical.</p><p>A graduate of Colby College, Xander lives in New York with his wife. When not skiing or playing music, Xander is an avid Fantasy Football Player.</p>',
+        'twitter': ''
+      },{
+        'speakerId': 26,
+        'firstName': 'Nihal',
+        'lastName': 'Mehta',
+        'company': 'Eniac',
+        'jobTitle': 'Founding General Partner',
+        'bio': '<p>Nihal Mehta is a Founding General Partner at Eniac Ventures. With over 15 years experience in marketing technologies through founding five startups and investing in 100+ since 1999, Nihal Mehta is a noted expert in the emerging adoption of mobile technologies for media properties and consumer brands.</p><p>Nihal founded M1 "Mobile-First" Summit in 2014, bringing together thousands of mobile innovators with two events/year in NYC and San Francisco. Prior to Eniac, Nihal co-founded LocalResponse, Inc. (now Qualia Media), which makes ads more relevant from social signals, which he pivoted from buzzd, the first mobile real-time city guide. As the founding CEO, Nihal grew LocalResponse\'s revenues 2153% over a three year period, which placed the company to #204 (#14 in NYC) to the 2014 Inc. 5000\'s Fastest Growing Companies and #67 to the 2013 Forbes list of America\'s Most Promising Companies. Prior to LocalResponse, Nihal founded ipsh!, one of the first full-service mobile marketing agencies in 2001, which was acquired by Omnicom (NYSE: OMC) in 2005. Nihal\'s investment portfolio includes Admob (sold to Google), Airbnb, HotelTonight, Swiftkey, Tapad & Uber.</p><p>In 2014, Nihal was named to AlleyWatch\'s "100 NYC Tech Influencers You Need to Know," in 2013, a semi-finalist for "Entrepreneur of the Year" by Ernst & Young, in 2012 a top 100 "Coolest People in NY Tech,"" by Business Insider, a "NYC tech influencer" by VentureBeat, one of the "25 People Every New Founder Should Meet in New York Tech" a top "25 Up-And-Coming Startup CEO in New York" by Business Insider, and a 2012 AlwaysOn "Power Player NYC."" Mehta was named a top 10 New York City "Game Changer" in the 2010 New York Enterprise Report, one of twenty RCR Wireless News "Mobile Movers and Shakers" in 2008, a BusinessWeek "M-Commerce Baron" in 2006 and named one of Ad Age\'s "Top 20 Marketers in Their 20s" in 2005. Nihal frequently guest lectures at business schools around the country on entrepreneurship and mobile marketing, and is published in over 15 books and white papers on the subject.</p><p>Nihal graduated from the University of Pennsylvania with a BA in Philosophy and a BSE in Computer Science.</p>',
+        'twitter': ''
       }
     ];
     $scope.currentSpeaker = -1;
