@@ -43,9 +43,9 @@ angular
         templateUrl: 'views/agenda.html',
         controller: 'AgendaCtrl'
       })
-      .when('/gstartup', {
-        title: 'G-Startup Competition',
-        templateUrl: 'views/gstartup.html'
+      .when('/competition', {
+        title: 'Competition',
+        templateUrl: 'views/competition.html'
       })
       .when('/newsletter', {
         title: 'Newsletter',

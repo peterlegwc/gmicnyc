@@ -118,6 +118,13 @@ section.img-heading {
   }
 }
 
+.reg-right {
+  text-align: center;
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -174,6 +181,9 @@ a:hover {
 .no-vmg {
   margin-top: 0;
   margin-bottom: 0;
+}
+.no-tmg {
+  margin-top: 0;
 }
 .translucent {
   opacity: 0;

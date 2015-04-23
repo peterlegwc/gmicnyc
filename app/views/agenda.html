@@ -1,7 +1,14 @@
 <section id="agenda">
   <div class="container">
-    <h3 class="color-primary text-center text-thin">Agenda</h3>
-    <div class="text-small text-center">Thursday, June 11, 2015</div>
+    <div class="row">
+      <div class="col-sm-offset-3 col-sm-6">
+        <h3 class="color-primary text-center text-thin no-tmg">Agenda</h3>
+        <div class="text-small text-center">Thursday, June 11, 2015</div>
+      </div>
+      <div class="col-sm-2 reg-right">
+        <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" class="btn btn-primary btn-lg" role="button">Register</a>
+      </div>
+    </div>
     <div class="sessions">
       <div class="row" ng-repeat="session in agenda | orderBy: orderByDate">
         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 session" ng-class="{last:$last}">
@@ -19,7 +26,7 @@
               <div class="text-small" ng-if="session.description || session.topic">
                 <span class="color-primary">Topic</span>:
                 <div ng-if="session.description">{{ session.description }}</div>
-                <div ng-if="!session.description">{{ topics[session.topic].desc }}</div>
+                <p ng-if="!session.description">{{ topics[session.topic].desc }}</p>
               </div>
             </div>
             <div ng-if="session.moderators" class="text-small">
