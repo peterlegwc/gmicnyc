@@ -13,7 +13,7 @@ angular.module('gmicnycApp')
       'engagement': {
         'topicId': 0,
         'title': 'Using Mobile to Deepen Customer Engagement',
-        'desc': 'The close bond mobile users have with their devices gives brands the chance to resonate emotionally with customers. But just getting your message heard among the thousands vying for consumer’s attention can be a huge challenge. At GMIC NYC you’ll get the inside scoop from brands that have figured out how to rise above the noise by creating groundbreaking customer experiences.',
+        'desc': 'The close bond mobile users have with their devices gives brands the chance to resonate emotionally with customers. But just getting your message heard among the thousands vying for consumer’s attention can be a huge challenge. At GMIC NY you’ll get the inside scoop from brands that have figured out how to rise above the noise by creating groundbreaking customer experiences.',
         'icon': 'users'
       },
       'omnichannel': {
