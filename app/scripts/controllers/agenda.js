@@ -223,10 +223,10 @@ angular.module('gmicnycApp')
         ],
         'format': 'Panel'
       }, {
-        'title': 'Mastering Mobile Engagement as a Media Company',
+        'title': 'Mastering Mobile Engagement',
         'startTime': '2015-06-11 14:45:00',
         'endTime': '2015-06-11 15:20:00',
-        'description': '',
+        'description': 'Keeping your opt-in users takes planning, especially in an industry with declining year-over-year opt-in rates for push notifications. Users don’t want to be distracted with messages, especially when those interruptions are not relevant. We’ll explore factors that impact engagement rates, and how you can create meaningful experiences for your users in an era where half the time consuming digital media is spent on mobile. ',
         'topic': 'millennials',
         'moderators': '',
         'speakers': [
