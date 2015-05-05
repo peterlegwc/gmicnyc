@@ -204,6 +204,14 @@ angular.module('gmicnycApp')
         'jobTitle': 'Chief Client Experience, Digital and Marketing Officer for Global Consumer Banking',
         'bio': 'Heather Cox has been the Chief Client Experience, Digital and Marketing Officer for Global Consumer Banking at Citigroup since April 2014. Ms. Cox is responsible for developing and implementing the vision, strategy and execution of a common client experience, driving global customer satisfaction efforts and leading Digital, Marketing and Decision Management across Global Consumer Banking. Prior to joining Citi, Ms. Cox served as the Head of Card Operations at Capital One Financial Corporation, where she developed, led and delivered a comprehensive customer experience strategy, leveraging digital innovations and customer data insights to help position it for further growth, customer engagement, and operating efficiency. Prior to Capital One, Ms. Cox served as the Head of North America Operations at E*TRADE. Ms. Cox was honored as one of American Banker\'s "Women to Watch" in 2011 and 2013, and was recognized by Washington Busin ess Journal\'s "Women Who Mean Business" in 2013',
         'twitter': ''
+      },{
+        'speakerId': 28,
+        'firstName': 'Calvin',
+        'lastName': 'Chan',
+        'company': 'AdMaster',
+        'jobTitle': 'Chief Operating Officer',
+        'bio': '<p>As Chief Operating Officer, Calvin is responsible for AdMaster’s operational excellence, organizational development and strategic partnerships. Calvin also holds responsibilities for the best delivery of wide-ranging solutions with his capability teams. Since joining AdMaster in 2012, Calvin previously held the positions of General Manager of AdMaster’s Beijing office, as well as Vice President, Strategy & Insights. Prior to that, Calvin worked in the US and China for the Nielsen Company.</p><p>In his over 10 years of media data solution experience, Calvin has set himself as the most innovative and dynamic, cross-media data solution expert and co-authors the book "Research on Cross-media Communication Strategy". Calvin is enlisted by Campaign for the 2014 and 2015 "Digital A-List", which recognizes top digital marketing experts in China. And he is a frequent speaker in high-level forum like Global Mobile International Conference (GMIC) and his opinions are always quoted by influential media including Campaign and China Daily, etc. Calvin is also regularly invited as judge member for industry awards, e.g. Effie Awards，Golden Mouse, ECI Awards and MMA Smarties Awards.</p><p>He also chairs the Board of Advisors for AIESEC in Mainland China, a non-profit that promotes youth leadership and global exchange programs.</p><p>Calvin has a bachelor’s degree in Marketing and a master’s degree in Humanities, both from The Hong Kong University of Science & Technology (HKUST).</p>',
+        'twitter': ''
       }
     ];
     $scope.currentSpeaker = -1;

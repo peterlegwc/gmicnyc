@@ -298,6 +298,14 @@ angular.module('gmicnycApp')
             'jobTitle': 'Co-founder & CEO',
             'bio': '<p>Steve, an Electronic Engineering major, established his first production company in 2001 producing movie trailers, motion graphics, music videos and commercials; and was also producing over 400 hours of branded, short-form fashion and beauty content for the four biggest lifestyle publishers. He proposed that online video content should be as \'connected\' as the rest of the web; linking pixels to people, products and information was the goal. He engineered the world\'s first shoppable video player which lead to the most powerful interactive video platform to help hundreds of global brands realize their video potential.</p>',
             'twitter': 'steviewax'
+          },{
+            'speakerId': 28,
+            'firstName': 'Calvin',
+            'lastName': 'Chan',
+            'company': 'AdMaster',
+            'jobTitle': 'Chief Operating Officer',
+            'bio': '<p>As Chief Operating Officer, Calvin is responsible for AdMaster’s operational excellence, organizational development and strategic partnerships. Calvin also holds responsibilities for the best delivery of wide-ranging solutions with his capability teams. Since joining AdMaster in 2012, Calvin previously held the positions of General Manager of AdMaster’s Beijing office, as well as Vice President, Strategy & Insights. Prior to that, Calvin worked in the US and China for the Nielsen Company.</p><p>In his over 10 years of media data solution experience, Calvin has set himself as the most innovative and dynamic, cross-media data solution expert and co-authors the book "Research on Cross-media Communication Strategy". Calvin is enlisted by Campaign for the 2014 and 2015 "Digital A-List", which recognizes top digital marketing experts in China. And he is a frequent speaker in high-level forum like Global Mobile International Conference (GMIC) and his opinions are always quoted by influential media including Campaign and China Daily, etc. Calvin is also regularly invited as judge member for industry awards, e.g. Effie Awards，Golden Mouse, ECI Awards and MMA Smarties Awards.</p><p>He also chairs the Board of Advisors for AIESEC in Mainland China, a non-profit that promotes youth leadership and global exchange programs.</p><p>Calvin has a bachelor’s degree in Marketing and a master’s degree in Humanities, both from The Hong Kong University of Science & Technology (HKUST).</p>',
+            'twitter': ''
           }
         ],
         'format': 'Panel'
