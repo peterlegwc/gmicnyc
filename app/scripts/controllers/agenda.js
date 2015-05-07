@@ -20,7 +20,7 @@ angular.module('gmicnycApp')
         'moderators': '',
         'speakers': '',
         'format': 'Event'
-      }, {
+      },{
         'title': 'Mobile On-Demand',
         'startTime': '2015-06-11 09:30:00',
         'endTime': '2015-06-11 10:00:00',
@@ -39,7 +39,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Presentation'
-      }, {
+      },{
         'title': 'Using Mobile to Deepen Customer Engagement',
         'startTime': '2015-06-11 10:00:00',
         'endTime': '2015-06-11 10:50:00',
@@ -93,7 +93,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Panel'
-      }, {
+      },{
         'title': 'Coffee Break',
         'startTime': '2015-06-11 10:50:00',
         'endTime': '2015-06-11 11:00:00',
@@ -102,7 +102,7 @@ angular.module('gmicnycApp')
         'moderators': '',
         'speakers': '',
         'format': 'Break'
-      }, {
+      },{
         'title': 'OmniChannel Approach: Creating Powerful Customer Experiences',
         'startTime': '2015-06-11 11:00:00',
         'endTime': '2015-06-11 11:50:00',
@@ -147,7 +147,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Panel'
-      }, {
+      },{
         'title': 'Mobile Wallet:  It\'s not just about Payments',
         'startTime': '2015-06-11 11:55:00',
         'endTime': '2015-06-11 12:15:00',
@@ -166,7 +166,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Presentation'
-      }, {
+      },{
         'title': 'Lunch',
         'startTime': '2015-06-11 12:15:00',
         'endTime': '2015-06-11 13:15:00',
@@ -175,19 +175,47 @@ angular.module('gmicnycApp')
         'moderators': '',
         'speakers': '',
         'format': 'Break'
-      }, {
-        'title': 'Millennials: Maximizing Gamification',
+      },{
+        'title': 'Case Study: Coca-Cola & Misfit Wearables',
         'startTime': '2015-06-11 13:15:00',
-        'endTime': '2015-06-11 13:45:00',
+        'endTime': '2015-06-11 13:40:00',
         'description': '',
-        'topic': 'millennials',
+        'topic': '',
         'moderators': '',
         'speakers': '',
         'format': 'Presentation'
-      }, {
+      },{
+        'title': 'Presentation: Citi',
+        'startTime': '2015-06-11 13:45:00',
+        'endTime': '2015-06-11 14:05:00',
+        'description': '',
+        'topic': '',
+        'moderators': '',
+        'speakers': [
+          {
+            'speakerId': 27,
+            'firstName': 'Heather',
+            'lastName': 'Cox',
+            'company': 'Citi',
+            'jobTitle': 'Chief Client Experience, Digital and Marketing Officer for Global Consumer Banking',
+            'bio': 'Heather Cox has been the Chief Client Experience, Digital and Marketing Officer for Global Consumer Banking at Citigroup since April 2014. Ms. Cox is responsible for developing and implementing the vision, strategy and execution of a common client experience, driving global customer satisfaction efforts and leading Digital, Marketing and Decision Management across Global Consumer Banking. Prior to joining Citi, Ms. Cox served as the Head of Card Operations at Capital One Financial Corporation, where she developed, led and delivered a comprehensive customer experience strategy, leveraging digital innovations and customer data insights to help position it for further growth, customer engagement, and operating efficiency. Prior to Capital One, Ms. Cox served as the Head of North America Operations at E*TRADE. Ms. Cox was honored as one of American Banker\'s "Women to Watch" in 2011 and 2013, and was recognized by Washington Busin ess Journal\'s "Women Who Mean Business" in 2013',
+            'twitter': ''
+          }
+        ],
+        'format': 'Presentation'
+      },{
+        'title': 'Presentation: Security in the Age of Wearables',
+        'startTime': '2015-06-11 14:10:00',
+        'endTime': '2015-06-11 14:30:00',
+        'description': '',
+        'topic': '',
+        'moderators': '',
+        'speakers': '',
+        'format': 'Presentation'
+      },{
         'title': 'Making Beacons Work for You',
-        'startTime': '2015-06-11 13:50:00',
-        'endTime': '2015-06-11 14:40:00',
+        'startTime': '2015-06-11 14:35:00',
+        'endTime': '2015-06-11 15:20:00',
         'description': '',
         'topic': 'beacons',
         'moderators': [
@@ -222,10 +250,10 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Panel'
-      }, {
+      },{
         'title': 'Mastering Mobile Engagement',
-        'startTime': '2015-06-11 14:45:00',
-        'endTime': '2015-06-11 15:20:00',
+        'startTime': '2015-06-11 15:30:00',
+        'endTime': '2015-06-11 16:15:00',
         'description': 'Keeping your opt-in users takes planning, especially in an industry with declining year-over-year opt-in rates for push notifications. Users don’t want to be distracted with messages, especially when those interruptions are not relevant. We’ll explore factors that impact engagement rates, and how you can create meaningful experiences for your users in an era where half the time consuming digital media is spent on mobile. ',
         'topic': 'millennials',
         'moderators': '',
@@ -257,7 +285,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Presentation'
-      }, {
+      },{
         'title': 'Coffee Break',
         'startTime': '2015-06-11 15:20:00',
         'endTime': '2015-06-11 15:30:00',
@@ -266,10 +294,10 @@ angular.module('gmicnycApp')
         'moderators': '',
         'speakers': '',
         'format': 'Break'
-      }, {
+      },{
         'title': 'Millennials: Make it Personal and Customized',
-        'startTime': '2015-06-11 15:30:00',
-        'endTime': '2015-06-11 16:20:00',
+        'startTime': '2015-06-11 16:20:00',
+        'endTime': '2015-06-11 17:05:00',
         'description': '',
         'topic': 'millennials',
         'moderators': '',
@@ -309,10 +337,10 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Panel'
-      }, {
+      },{
         'title': 'VC Perspectives: Monetizing your Customer\'s Mobile Experience',
-        'startTime': '2015-06-11 16:25:00',
-        'endTime': '2015-06-11 17:15:00',
+        'startTime': '2015-06-11 17:10:00',
+        'endTime': '2015-06-11 17:55:00',
         'description': '',
         'topic': 'vcs',
         'moderators': '',
@@ -336,7 +364,7 @@ angular.module('gmicnycApp')
           }
         ],
         'format': 'Panel'
-      }, {
+      },{
         'title': 'Networking Reception',
         'startTime': '2015-06-11 17:15:00',
         'endTime': '2015-06-11 18:30:00',
