@@ -34,7 +34,7 @@ angular.module('gmicnycApp')
             'lastName': 'Owens',
             'company': 'Google Shopping Express',
             'jobTitle': 'GM Operations',
-            'bio': '',
+            'bio': 'Jenna Owens leads Google Express operations. Jenna has spent her career on the cutting edge of e-commerce distribution and customer support operations. Highlights include shipping record volume and launching same day delivery in Amazon’s distribution network as well as restructuring legacy global supply chains for Fortune 500s at McKinsey.',
             'twitter': ''
           }
         ],
@@ -204,13 +204,23 @@ angular.module('gmicnycApp')
         ],
         'format': 'Presentation'
       },{
-        'title': 'Presentation: Security in the Age of Wearables',
+        'title': 'Securing the New Wearables World',
         'startTime': '2015-06-11 14:10:00',
         'endTime': '2015-06-11 14:30:00',
-        'description': '',
+        'description': '<p>Consumers are now widely adopting wearable technology – consulting firm Deloitte predicted there will be 100 million wearable cameras, smartwatches, fitness trackers and other gadgets on the market by 2020. But with this mass adoption of wearable devices, comes a new data ecosystem that must be protected. Wearables are opening up new pathways that facilitate the tracking, sharing and storing of consumers’ personal health, location and daily activity data. Someone’s heart rate, blood pressure, finances, demographics and daily routine including exercise habits and commuting patterns are being collected and used to improve everyday life.</p><p>That’s why embracing the protection of this new, intricate data ecosystem is imperative to the success of wearable industry. By effectively addressing the security vulnerabilities, privacy concerns and regulation issues that come with the evolving wearable industry, this brave new world can be enjoyed by all.</p>',
         'topic': '',
         'moderators': '',
-        'speakers': '',
+        'speakers': [
+          {
+            'speakerId': 30,
+            'firstName': 'Gary',
+            'lastName': 'Davis',
+            'company': 'Intel Security',
+            'jobTitle': 'Chief Consumer Security Evangelist',
+            'bio': '<p>Gary Davis is Chief Consumer Security Evangelist. Through a consumer lens, he works closely with internal teams to drive strategic alignment of products with the needs of the security space. Gary also oversees Intel Security\'s online safety education to educate businesses and consumers by distilling complex security topics into easily understandable and actionable advice. During his 5+ years at the company, he has held leadership roles in the consumer and enterprise divisions where he has helped shape various product portfolios and strategic direction along with advocating for cybersecurity education. Gary has appeared on several business, security and consumer lifestyle media outlets, including CNBC, NBC, FOX, and CBS Bay Area stations; and quoted in the New York Times, Wall Street Journal, CNN, Forbes, TIME Magazine, MSNBC, PC Magazine, CNET, CSO Magazine, and PC World. Prior to joining McAfee, he held senior management positions for more than 15 years in technology companies. Gary serves on the board of directors of the National Cyber Security Alliance (NCSA).</p>',
+            'twitter': ''
+          }
+        ],
         'format': 'Presentation'
       },{
         'title': 'Making Beacons Work for You',
@@ -240,13 +250,21 @@ angular.module('gmicnycApp')
             'bio': 'Ryan\'s natural fascination with the intersection of retail and technology has led to a career of inspiring and leading retailers to be on the forefront of the evolving "connected retail" environment. Ryan enjoys tackling changing consumer dynamics and defining how retail organizations and brands can leverage technology to strengthen their competitive position. Ryan currently leads Emerging Brands, Licensing and Digital Strategy for Lamour Group\'s portfolio of global brands while advising several startups focused on Mobile and AdTech. Prior to joining Lamour, Ryan was in charge of the core department store strategy at Lord & Taylor / Hudson\'s Bay Company and was a senior leader at Accenture, driving growth and profit improvement across multiple clients, including Virgin Media, FedEx and Best Buy.',
             'twitter': 'ryanmcraver'
           },{
-            'id': 10,
+            'speakerId': 10,
             'firstName': 'Wesley',
             'lastName': 'Barrow',
             'company': 'Nomi',
             'jobTitle': 'Founder',
-            'bio': '',
+            'bio': '<p>Wesley Barrow is the Founder and Head of Strategic Markets for Nomi - the world\'s leading analytics platform for brick-and-mortar retailers. Prior to Nomi, Wesley was a veteran enterprise software executive who spent 2.5 years with Buddy Media - a social media marketing platform. As Buddy Media’s #1 revenue producer, Wesley helped scale its business from 40 to 300 people through agency partnerships and sales. Wesley’s top clients spanned across automotive, CPG, retail and pharma verticals including companies such as Ford, GM, Toyota, Unilever, Kraft, GSK, Shell, Petsmart, MetroPCS and many others. In August 2012, Buddy Media was acquired by Salesforce.com for $745 million.</p><p>Prior to Buddy Media, Wesley was the Director of Business Development at Reality Digital where he structured deals with entertainment and brand clients including Pepsi, YouTube and MTV and previously worked in Corporate Consulting for the William Morris Agency.</p><p>Wesley holds a B.A in Cinema Studies from the University of Pennsylvania and has spoken at many retail and technology events such as CES, SXSW, Social Media Week, Decoded Fashion, Fashion Forward, Fashion Digital, iProspect, Flurry Source and more.</p>',
             'twitter': 'wesleybarrow'
+          },{
+            'speakerId': 29,
+            'firstName': 'David',
+            'lastName': 'VanderWaal',
+            'company': 'LG',
+            'jobTitle': 'VP Marketing',
+            'bio': '',
+            'twitter': ''
           }
         ],
         'format': 'Panel'
@@ -343,7 +361,17 @@ angular.module('gmicnycApp')
         'endTime': '2015-06-11 17:55:00',
         'description': '',
         'topic': 'vcs',
-        'moderators': '',
+        'moderators': [
+          {
+            'speakerId': 31,
+            'firstName': 'Barrett',
+            'lastName': 'Parkman',
+            'company': 'GWC US',
+            'jobTitle': 'President',
+            'bio': '',
+            'twitter': ''
+          }
+        ],
         'speakers': [
           {
             'id': 17,
@@ -366,8 +394,8 @@ angular.module('gmicnycApp')
         'format': 'Panel'
       },{
         'title': 'Networking Reception',
-        'startTime': '2015-06-11 17:15:00',
-        'endTime': '2015-06-11 18:30:00',
+        'startTime': '2015-06-11 18:00:00',
+        'endTime': '2015-06-11 19:15:00',
         'description': '',
         'topic': '',
         'moderators': '',

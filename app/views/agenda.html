@@ -25,8 +25,8 @@
             <div class="ng-slideInOut" ng-show="session.show">
               <div class="text-small" ng-if="session.description || session.topic">
                 <span class="color-primary">Topic</span>:
-                <div ng-if="session.description">{{ session.description }}</div>
-                <p ng-if="!session.description">{{ topics[session.topic].desc }}</p>
+                <div ng-if="session.description" ng-bind-html="session.description"></div>
+                <p ng-if="!session.description" ng-bind-html="topics[session.topic].desc"></p>
               </div>
             </div>
             <div ng-if="session.moderators" class="text-small">

@@ -81,7 +81,7 @@ angular.module('gmicnycApp')
         'lastName': 'Barrow',
         'company': 'Nomi',
         'jobTitle': 'Founder',
-        'bio': '',
+        'bio': '<p>Wesley Barrow is the Founder and Head of Strategic Markets for Nomi - the world\'s leading analytics platform for brick-and-mortar retailers. Prior to Nomi, Wesley was a veteran enterprise software executive who spent 2.5 years with Buddy Media - a social media marketing platform. As Buddy Media’s #1 revenue producer, Wesley helped scale its business from 40 to 300 people through agency partnerships and sales. Wesley’s top clients spanned across automotive, CPG, retail and pharma verticals including companies such as Ford, GM, Toyota, Unilever, Kraft, GSK, Shell, Petsmart, MetroPCS and many others. In August 2012, Buddy Media was acquired by Salesforce.com for $745 million.</p><p>Prior to Buddy Media, Wesley was the Director of Business Development at Reality Digital where he structured deals with entertainment and brand clients including Pepsi, YouTube and MTV and previously worked in Corporate Consulting for the William Morris Agency.</p><p>Wesley holds a B.A in Cinema Studies from the University of Pennsylvania and has spoken at many retail and technology events such as CES, SXSW, Social Media Week, Decoded Fashion, Fashion Forward, Fashion Digital, iProspect, Flurry Source and more.</p>',
         'twitter': 'wesleybarrow'
       },{
         'speakerId': 11,
@@ -146,7 +146,7 @@ angular.module('gmicnycApp')
         'lastName': 'Owens',
         'company': 'Google Shopping Express',
         'jobTitle': 'GM Operations',
-        'bio': '',
+        'bio': 'Jenna Owens leads Google Express operations. Jenna has spent her career on the cutting edge of e-commerce distribution and customer support operations. Highlights include shipping record volume and launching same day delivery in Amazon’s distribution network as well as restructuring legacy global supply chains for Fortune 500s at McKinsey.',
         'twitter': ''
       },{
         'speakerId': 22,
@@ -203,6 +203,30 @@ angular.module('gmicnycApp')
         'company': 'AdMaster',
         'jobTitle': 'Chief Operating Officer',
         'bio': '<p>As Chief Operating Officer, Calvin is responsible for AdMaster’s operational excellence, organizational development and strategic partnerships. Calvin also holds responsibilities for the best delivery of wide-ranging solutions with his capability teams. Since joining AdMaster in 2012, Calvin previously held the positions of General Manager of AdMaster’s Beijing office, as well as Vice President, Strategy & Insights. Prior to that, Calvin worked in the US and China for the Nielsen Company.</p><p>In his over 10 years of media data solution experience, Calvin has set himself as the most innovative and dynamic, cross-media data solution expert and co-authors the book "Research on Cross-media Communication Strategy". Calvin is enlisted by Campaign for the 2014 and 2015 "Digital A-List", which recognizes top digital marketing experts in China. And he is a frequent speaker in high-level forum like Global Mobile International Conference (GMIC) and his opinions are always quoted by influential media including Campaign and China Daily, etc. Calvin is also regularly invited as judge member for industry awards, e.g. Effie Awards，Golden Mouse, ECI Awards and MMA Smarties Awards.</p><p>He also chairs the Board of Advisors for AIESEC in Mainland China, a non-profit that promotes youth leadership and global exchange programs.</p><p>Calvin has a bachelor’s degree in Marketing and a master’s degree in Humanities, both from The Hong Kong University of Science & Technology (HKUST).</p>',
+        'twitter': ''
+      },{
+        'speakerId': 29,
+        'firstName': 'David',
+        'lastName': 'VanderWaal',
+        'company': 'LG',
+        'jobTitle': 'VP Marketing',
+        'bio': '',
+        'twitter': ''
+      },{
+        'speakerId': 30,
+        'firstName': 'Gary',
+        'lastName': 'Davis',
+        'company': 'Intel Security',
+        'jobTitle': 'Chief Consumer Security Evangelist',
+        'bio': '<p>Gary Davis is Chief Consumer Security Evangelist. Through a consumer lens, he works closely with internal teams to drive strategic alignment of products with the needs of the security space. Gary also oversees Intel Security\'s online safety education to educate businesses and consumers by distilling complex security topics into easily understandable and actionable advice. During his 5+ years at the company, he has held leadership roles in the consumer and enterprise divisions where he has helped shape various product portfolios and strategic direction along with advocating for cybersecurity education. Gary has appeared on several business, security and consumer lifestyle media outlets, including CNBC, NBC, FOX, and CBS Bay Area stations; and quoted in the New York Times, Wall Street Journal, CNN, Forbes, TIME Magazine, MSNBC, PC Magazine, CNET, CSO Magazine, and PC World. Prior to joining McAfee, he held senior management positions for more than 15 years in technology companies. Gary serves on the board of directors of the National Cyber Security Alliance (NCSA).</p>',
+        'twitter': ''
+      },{
+        'speakerId': 31,
+        'firstName': 'Barrett',
+        'lastName': 'Parkman',
+        'company': 'GWC US',
+        'jobTitle': 'President',
+        'bio': '',
         'twitter': ''
       }
     ];
