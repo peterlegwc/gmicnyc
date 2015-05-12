@@ -17,18 +17,12 @@
         <p>Creating a deeper engagement with your customers via mobile is key. GMIC New York will address the unique challenges and opportunities that brands using mobile experience everyday. Come explore the future of mobile for entertainment, retail, media, brands, agencies and consumer products to get a clear perspective on how to optimize the mobile customer experience.</p>
       </div>
       <div class="col-md-4">
-        <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" target="_blank" class="callout-box">
+        <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" onclick="ga('send','event','Outgoing Links','https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1')" target="_blank" class="callout-box">
           <div class="primary">
             <h5>Register Now <i class="icon fa fa-chevron-circle-right" aria-hidden="true"></i></h5>
           </div>
         </a>
-        <a class="callout-box" href="/speakers">
-          <div class="accent">
-            <h5>Call for Speakers <i class="icon fa fa-chevron-circle-right" aria-hidden="true"></i></h5>
-            <p>Interested to join the conversation at GMIC New York as a speaker? We welcome proposals from industry leaders with big ideas in mobile.</p>
-          </div>
-        </a>
-        <a data-toggle="modal" data-target="#contact-sales" class="callout-box" href="mailto:sean.raman@gwc.net">
+        <a data-toggle="modal" data-target="#contact-sales" class="callout-box" onclick="ga('send','event','Outgoing Links','http://www2.gwc.net/l/69692/2015-03-31/7dsh')" href="http://www2.gwc.net/l/69692/2015-03-31/7dsh">
           <div class="spacegrey">
             <h5>Exhibit or Sponsor <i class="icon fa fa-chevron-circle-right
 " aria-hidden="true"></i></h5>
@@ -123,7 +117,7 @@
       <h3 class="color-spacegrey text-center text-thin">GMIC Locations</h3>
       <div class="col-sm-3" ng-repeat="event in gmics">
         <div ng-if="event.url">
-          <a href="{{ event.url }}"><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
+          <a ng-href="{{ event.url }}" ng-click="ga('send','event','Outgoing Links','{{ event.url }}')" target="_blank"><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
         </div>
         <div ng-if="!event.url">
           <a><img ng-src="{{ event.img }}" alt="{{ event.name }}"><h5>{{ event.city }}</h5><span class="text-thin">{{ event.date }}</span></a>
