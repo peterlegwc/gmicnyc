@@ -8,7 +8,9 @@
 .col-sm-2-4 {
   @include make-sm-column(2.4);
 }
-
+.col-sm-offset-1-5 {
+  @include make-sm-column-offset(1.5);
+}
 /* bootstrap buttons */
 .btn {
   @extend .transition-medium;

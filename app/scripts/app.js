@@ -51,6 +51,10 @@ angular
         title: 'Newsletter',
         templateUrl: 'views/newsletter.html'
       })
+      .when('/passes-prices', {
+        title: 'Passes and Prices',
+        templateUrl: 'views/passes-prices.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
