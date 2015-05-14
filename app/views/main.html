@@ -80,15 +80,20 @@
       <div class="col-xs-12">
         <h3 class="text-center text-thin color-spacegrey">In New York We'll Discuss...</h3>
       </div>
-      <span ng-repeat="topic in topics">
+      <div class="spinner-page" ng-if="!loaded">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      <span ng-repeat="topic in topics" class="repeat-fade">
         <div class="col-sm-6 col-md-4">
           <div class="text-center">
             <a href="/topics"><span class="fa-stack fa-2x" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x color-primary" aria-hidden="true"></i>
-                <i class="fa fa-{{ topic.icon }} fa-stack-1x color-white" aria-hidden="true"></i>
+                <i class="fa fa-{{ topic.Icon }} fa-stack-1x color-white" aria-hidden="true"></i>
               </span></a>
           </div>
-          <h4 class="text-center text-thin color-spacegrey" ng-bind="topic.title"></h4>
+          <h4 class="text-center text-thin color-spacegrey" ng-bind="topic.Title"></h4>
         </div>
         <div class="clearfix visible-sm-block" ng-if="$index % 2 == 1"></div>
         <div class="clearfix visible-md-block visible-lg-block" ng-if="$index % 3 == 2"></div>

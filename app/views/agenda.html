@@ -9,38 +9,43 @@
         <a href="https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1" class="btn btn-primary btn-lg" role="button" onclick="ga('send','event','Outgoing Links','https://www.customreg.com/generalreg28/default.asp?show=gwc_gmic_062015&IDevent1=1')" target="_blank">Register</a>
       </div>
     </div>
+    <div class="spinner-page" ng-if="!loaded">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
     <div class="sessions">
-      <div class="row" ng-repeat="session in agenda | orderBy: orderByDate">
+      <div class="row repeat-fade" ng-repeat="session in agenda | orderBy: orderByDate">
         <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 session" ng-class="{last:$last}">
           <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey" ng-click="toggleDesc()">
-            <div ng-bind="parseDate(session.startTime) | date:'shortTime'"></div>
-            <div ng-bind="parseDate(session.endTime) | date:'shortTime'"></div>
-            <span class="fa-stack fa-2x" aria-hidden="true" ng-if="topics[session.topic].icon">
+            <div ng-bind="parseDate(session.StartTime) | date:'shortTime'"></div>
+            <div ng-bind="parseDate(session.EndTime) | date:'shortTime'"></div>
+            <span class="fa-stack fa-2x" aria-hidden="true" ng-if="session.NycTopics_by_TopicId.Icon">
               <i class="fa fa-circle fa-stack-2x color-primary" aria-hidden="true"></i>
-              <i class="fa fa-{{ topics[session.topic].icon }} fa-stack-1x color-white" aria-hidden="true"></i>
+              <i class="fa fa-{{ session.NycTopics_by_TopicId.Icon }} fa-stack-1x color-white" aria-hidden="true"></i>
             </span>
           </div>
           <div class="col-xs-9 col-sm-8 col-md-9 info" ng-click="toggleDesc()">
-            <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.format=='Break'}" ng-bind="session.title"></h4>
+            <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.Format=='Break'}" ng-bind="session.Name"></h4>
             <div class="ng-slideInOut" ng-show="session.show">
-              <div class="text-small" ng-if="session.description || session.topic">
+              <div class="text-small" ng-if="session.Desc || session.TopicId">
                 <span class="color-primary">Topic</span>:
-                <div ng-if="session.description" ng-bind-html="session.description"></div>
-                <p ng-if="!session.description" ng-bind-html="topics[session.topic].desc"></p>
+                <div ng-if="session.Desc" ng-bind-html="session.Desc"></div>
+                <p ng-if="!session.Desc" ng-bind-html="session.NycTopics_by_TopicId.Desc"></p>
               </div>
             </div>
-            <div ng-if="session.moderators" class="text-small">
-              <span class="color-primary" ng-if="session.moderators.length > 1">Moderators</span>
-              <span class="color-primary" ng-if="session.moderators.length == 1">Moderator</span>:
+            <div ng-if="session.Speakers_by_NycSessionModerators.length > 0" class="text-small">
+              <span class="color-primary" ng-if="session.Speakers_by_NycSessionModerators.length > 1">Moderators:</span>
+              <span class="color-primary" ng-if="session.Speakers_by_NycSessionModerators.length == 1">Moderator:</span>
               <ul class="list-unstyled">
-                <li ng-repeat="moderator in session.moderators | orderBy: 'lastName'">{{ moderator.firstName }} {{ moderator.lastName }}, {{ moderator.jobTitle }}, <strong>{{ moderator.company }}</strong></li>
+                <li ng-repeat="moderator in session.Speakers_by_NycSessionModerators | orderBy: 'LastName'">{{ moderator.FirstName }} {{ moderator.LastName }}, {{ moderator.JobTitle }}, <strong>{{ moderator.Company }}</strong></li>
               </ul>
             </div>
-            <div ng-if="session.speakers" class="text-small">
-              <span class="color-primary" ng-if="session.speakers.length > 1">Speakers</span>
-              <span class="color-primary" ng-if="session.speakers.length == 1">Speaker</span>:
+            <div ng-if="session.Speakers_by_NycSessionSpeakers.length > 0" class="text-small">
+              <span class="color-primary" ng-if="session.Speakers_by_NycSessionSpeakers.length > 1">Speakers:</span>
+              <span class="color-primary" ng-if="session.Speakers_by_NycSessionSpeakers.length == 1">Speaker:</span>
               <ul class="list-unstyled">
-                <li ng-repeat="speaker in session.speakers | orderBy: 'lastName'">{{ speaker.firstName }} {{ speaker.lastName }}, {{ speaker.jobTitle }}, <strong>{{ speaker.company }}</strong></li>
+                <li ng-repeat="speaker in session.Speakers_by_NycSessionSpeakers | orderBy: 'LastName'">{{ speaker.FirstName }} {{ speaker.LastName }}, {{ speaker.JobTitle }}, <strong>{{ speaker.Company }}</strong></li>
               </ul>
             </div>
           </div>

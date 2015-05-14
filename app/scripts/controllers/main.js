@@ -8,7 +8,7 @@
  * Controller of the gmicnyc
  */
 angular.module('gmicnycApp')
-  .controller('MainCtrl', ['$scope', 'leafletData', 'topicsFactory', function ($scope, leafletData, topicsFactory) {
+  .controller('MainCtrl', ['$scope', '$rootScope', 'leafletData', 'DreamFactory', function ($scope, $rootScope, leafletData, DreamFactory) {
     angular.extend($scope, {
         desktopCenter: {
           lat: 40.7530026,
@@ -96,11 +96,36 @@ angular.module('gmicnycApp')
       },
     ];
 
-    $scope.topics = topicsFactory.getAllArr();
-
-    $scope.hoverTopic = function() {
-      $scope.currentTopic = this.topic;
+    var req = {table_name: 'NycTopics'};
+    $scope.loaded = false;
+    $scope.topics = {};
+    $scope.$on('api:ready', function() {
+      $rootScope.apiReady = true;
+      $scope.$broadcast('getTopics');
+    });
+    var getTopics = function() {
+      DreamFactory.api.db.getRecords(req,
+        function(data) {
+          $scope.loaded = true;
+          $scope.topics = data.record;
+        },
+        function(error) {
+          console.log(error);
+        }
+      );
     };
+
+    $scope.$on('getTopics', function() {
+      getTopics();
+    });
+
+    if (!$scope.loaded && $rootScope.apiReady) {
+      getTopics();
+    }
+
+    // $scope.hoverTopic = function() {
+    //   $scope.currentTopic = this.topic;
+    // };
 
     // TODO: Move leaflet conditional logic into a directive
     // offsets map on larger screens to show more of new york

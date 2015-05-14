@@ -14,8 +14,11 @@ angular
     'ngResource',
     'leaflet-directive',
     'ngAnimate',
-    'ngSanitize'
+    'ngSanitize',
+    'ngDreamFactory'
   ])
+  .constant('DSP_URL', 'https://dsp-gmic.cloud.dreamfactory.com')
+  .constant('DSP_API_KEY', 'gmicnyc')
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
