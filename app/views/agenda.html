@@ -29,9 +29,14 @@
             <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.Format=='Break'}" ng-bind="session.Name"></h4>
             <div class="ng-slideInOut" ng-show="session.show">
               <div class="text-small" ng-if="session.Desc || session.TopicId">
-                <span class="color-primary">Topic</span>:
-                <div ng-if="session.Desc" ng-bind-html="session.Desc"></div>
-                <p ng-if="!session.Desc" ng-bind-html="session.NycTopics_by_TopicId.Desc"></p>
+                <div ng-if="session.Desc">
+                  <span class="color-primary">Description:</span>
+                  <p ng-bind-html="session.Desc"></p>
+                </div>
+                <div ng-if="!session.Desc">
+                  <span class="color-primary">Topic:</span>
+                  <p ng-if="!session.Desc" ng-bind-html="session.NycTopics_by_TopicId.Desc"></p>
+                </div>
               </div>
             </div>
             <div ng-if="session.Speakers_by_NycSessionModerators.length > 0" class="text-small">
@@ -50,7 +55,7 @@
             </div>
           </div>
           <div class="hidden-xs col-sm-2 col-md-1 format" ng-click="toggleDesc()">
-            <div class="color-spacegrey" ng-bind="session.format"></div>
+            <div class="color-spacegrey" ng-bind="session.Format"></div>
           </div>
         </div>
       </div>

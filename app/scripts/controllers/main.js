@@ -8,7 +8,7 @@
  * Controller of the gmicnyc
  */
 angular.module('gmicnycApp')
-  .controller('MainCtrl', ['$scope', '$rootScope', 'leafletData', 'DreamFactory', function ($scope, $rootScope, leafletData, DreamFactory) {
+  .controller('MainCtrl', ['$scope','$rootScope','$timeout','leafletData','DreamFactory',function ($scope,$rootScope,$timeout,leafletData,DreamFactory) {
     angular.extend($scope, {
         desktopCenter: {
           lat: 40.7530026,
@@ -111,6 +111,7 @@ angular.module('gmicnycApp')
         },
         function(error) {
           console.log(error);
+          $timeout(getTopics, 2000);
         }
       );
     };

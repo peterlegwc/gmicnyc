@@ -8,7 +8,7 @@
  * Controller of the gmicnycApp
  */
 angular.module('gmicnycApp')
-  .controller('SpeakersCtrl', ['$scope','$rootScope', 'DreamFactory', function ($scope,$rootScope,DreamFactory) {
+  .controller('SpeakersCtrl', ['$scope','$rootScope','$timeout','DreamFactory', function ($scope,$rootScope,$timeout,DreamFactory) {
     var req = {
       table_name: 'NycSessions',
       related: 'Speakers_by_NycSessionSpeakers,Speakers_by_NycSessionModerators'
@@ -34,6 +34,7 @@ angular.module('gmicnycApp')
         },
         function(error) {
           console.log(error);
+          $timeout(getSpeakers, 2000);
         }
       );
     };
