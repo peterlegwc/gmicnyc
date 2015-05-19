@@ -32,9 +32,8 @@ angular
         controller: 'SpeakersCtrl'
       })
       .when('/sponsors', {
-        title: 'Sponsorship',
-        templateUrl: 'views/sponsors.html',
-        controller: 'SponsorsCtrl'
+        title: 'Sponsors',
+        templateUrl: 'views/sponsors.html'
       })
       .when('/topics', {
         title: 'Topics',
