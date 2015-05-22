@@ -13,6 +13,9 @@ angular.module('gmicnycApp')
       templateUrl: 'views/speakerdialog.html',
       link: function postLink(scope, element, attrs) {
         var opened = false;
+        scope.formatName = function(name) {
+          return name.replace(/\s/g , '-');
+        };
         scope.$watch('currentSpeaker', function(newVal, oldVal) {
           if (newVal !== -1) {
             opened = true;

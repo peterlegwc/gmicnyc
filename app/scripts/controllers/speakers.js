@@ -51,4 +51,7 @@ angular.module('gmicnycApp')
     $scope.setDialog = function() {
       $scope.currentSpeaker = this.speaker.SpeakerId;
     };
+    $scope.formatName = function(name) {
+      return name.replace(/\s/g , '-');
+    };
   }]);
