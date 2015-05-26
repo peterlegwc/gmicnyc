@@ -40,6 +40,7 @@
               </div>
             </div>
             <div ng-if="session.Speakers_by_NycSessionModerators.length > 0" class="text-small">
+              <span class="color-primary" ng-if="session.SessionId == 1">Host:</span>
               <span class="color-primary" ng-if="session.Speakers_by_NycSessionModerators.length > 1">Moderators:</span>
               <span class="color-primary" ng-if="session.Speakers_by_NycSessionModerators.length == 1">Moderator:</span>
               <ul class="list-unstyled">
