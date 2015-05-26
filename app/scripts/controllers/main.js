@@ -64,7 +64,7 @@ angular.module('gmicnycApp')
         city: 'Jakarta',
         date: 'August 11, 2015',
         img: 'images/gmics/gmic-jakarta.png',
-        url: ''
+        url: '//jakarta.thegmic.com'
       },
       {
         name: 'GMIC Bangalore',
