@@ -17,7 +17,7 @@ angular.module('gmicnycApp')
     $scope.loaded = false;
     $scope.speakers = [];
     var tempData = [];
-
+    var uniqueSpeakers = [];
     $scope.$on('api:ready', function() {
       $rootScope.apiReady = true;
       $scope.$broadcast('getSpeakers');
@@ -30,6 +30,14 @@ angular.module('gmicnycApp')
           tempData.forEach(function(element,index,array) {
             $scope.speakers = $scope.speakers.concat(element.Speakers_by_NycSessionSpeakers);
             $scope.speakers = $scope.speakers.concat(element.Speakers_by_NycSessionModerators);
+          });
+          $scope.speakers.forEach(function(element,index,array) {
+            if (uniqueSpeakers.indexOf(element.SpeakerId) >= 0) {
+              $scope.speakers.splice(index,1);
+            }
+            else {
+              uniqueSpeakers.push(element.SpeakerId);
+            }
           });
         },
         function(error) {
