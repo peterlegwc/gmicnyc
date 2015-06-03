@@ -20,10 +20,6 @@
           <div class="col-xs-3 col-sm-2 col-md-2 time text-right color-spacegrey" ng-click="toggleDesc()">
             <div ng-bind="parseDate(session.StartTime) | date:'shortTime'"></div>
             <div ng-bind="parseDate(session.EndTime) | date:'shortTime'"></div>
-            <span class="fa-stack fa-2x" aria-hidden="true" ng-if="session.NycTopics_by_TopicId.Icon">
-              <i class="fa fa-circle fa-stack-2x color-primary" aria-hidden="true"></i>
-              <i class="fa fa-{{ session.NycTopics_by_TopicId.Icon }} fa-stack-1x color-white" aria-hidden="true"></i>
-            </span>
           </div>
           <div class="col-xs-9 col-sm-8 col-md-9 info" ng-click="toggleDesc()">
             <h4 class="title color-spacegrey no-vmg" ng-class="{break:session.Format=='Break'}" ng-bind="session.Name"></h4>

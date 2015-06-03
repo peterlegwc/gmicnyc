@@ -1,0 +1,10 @@
+.app a {
+  color: $spacegrey;
+}
+.app-icon {
+  border-radius: 20%;
+  box-shadow: 2px 2px 5px lighten($spacegrey,30%);
+}
+.app-name {
+  margin: 5px 0;
+}
