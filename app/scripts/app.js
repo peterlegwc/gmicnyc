@@ -57,6 +57,10 @@ angular
         title: 'Passes and Prices',
         templateUrl: 'views/passes-prices.html'
       })
+      .when('/upcoming', {
+        title: 'Upcoming Events',
+        templateUrl: 'views/upcoming.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
