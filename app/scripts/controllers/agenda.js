@@ -44,8 +44,10 @@ angular.module('gmicnycApp')
     }
 
     $scope.parseDate = function(mySqlDate) {
-      var d = mySqlDate.split(/[- :]/);
-      return new Date(d[0], d[1]-1, d[2], d[3] || 0, d[4] || 0, d[5] || 0);
+      if (mySqlDate) {
+        var d = mySqlDate.split(/[- :]/);
+        return new Date(d[0], d[1]-1, d[2], d[3] || 0, d[4] || 0, d[5] || 0);
+      }
     };
     $scope.orderByDate = function (item) {
       return $scope.parseDate(item.StartTime);
